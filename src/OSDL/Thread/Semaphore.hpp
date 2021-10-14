@@ -13,6 +13,9 @@
 struct SDL_semaphore;
 
 namespace OSDL {
+/**
+ *
+ */
 class Semaphore {
 public:
 	Semaphore();
