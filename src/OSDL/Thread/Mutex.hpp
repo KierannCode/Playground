@@ -60,7 +60,7 @@ public:
 	 * @throws OSDL::SDLException if the mutex could not be unlocked by SDL
 	 *
 	 * @exceptsafe If the methods throws an exception, the mutex might be corrupted and
-	 * shall not be used anymore.
+	 * shall not be used anymore. Can cause undefined behavior.
 	 */
 	void unlock();
 
@@ -70,7 +70,7 @@ public:
 	 * A mutex must always be destroyed in its unlocked state.
 	 * Destroying a locked mutex results in undefined behavior.
 	 *
-	 * @exceptsafe Shall not throw exceptions.
+	 * @exceptsafe Shall not throw exceptions. Can cause undefined behavior.
 	 */
 	~Mutex();
 private:
