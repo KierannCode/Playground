@@ -15,6 +15,7 @@ enum class LogLevel {
 	NONE = 0, ERROR = 1, WARNING = 2, INFO = 3, DEBUG = 4
 };
 
+/// TODO : Allow formatted inputs in logs.
 class Log {
 public:
 	static void setLevel(LogLevel logLevel);
