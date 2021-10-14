@@ -54,19 +54,19 @@ void OSDL::Window::updateSurface(OSDL::Surface *surface) {
 	if (windowSurface == nullptr) {
 		throw OSDL::SDLException();
 	}
-	/*if (SDL_BlitSurface(surface->surface, nullptr, windowSurface, nullptr)
+	if (SDL_BlitSurface(surface->surface, nullptr, windowSurface, nullptr)
 			== -1) {
 		throw OSDL::SDLException();
-	}*/
+	}
 	SDL_Renderer *renderer = SDL_CreateRenderer(window, -1, 0);
-	SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255);
-	SDL_RenderFillRect(renderer, &r);
-	SDL_RenderDrawPoint(renderer, 400, 400);
-	SDL_RenderPresent(renderer);
-	SDL_DestroyRenderer(renderer);
-	/*if (SDL_UpdateWindowSurface(window) == -1) {
+	//SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255);
+	//SDL_RenderFillRect(renderer, &r);
+	//SDL_RenderDrawPoint(renderer, 400, 400);
+	//SDL_RenderPresent(renderer);
+	//SDL_DestroyRenderer(renderer);
+	if (SDL_UpdateWindowSurface(window) == -1) {
 		OSDL::Log::warning(OSDL::SDLException().what());
-	}*/
+	}
 }
 
 OSDL::Window::~Window() {
