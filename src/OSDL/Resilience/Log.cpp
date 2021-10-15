@@ -16,6 +16,11 @@
 #include <iostream>
 #include <ctime>
 
+std::stringstream OSDL::Log::errorStream = std::stringstream();
+std::stringstream OSDL::Log::warningStream = std::stringstream();
+std::stringstream OSDL::Log::infoStream = std::stringstream();
+std::stringstream OSDL::Log::debugStream = std::stringstream();
+
 OSDL::Mutex &OSDL::Log::mutex = OSDL::Mutex();
 
 OSDL::LogLevel OSDL::Log::level = OSDL::LogLevel::ERROR;
@@ -64,6 +69,22 @@ void OSDL::Log::debug(const char *message) {
 	}
 	mutex.unlock();
 }
+std::ostream& OSDL::Log::startError() {
+	mutex.lock();
+	return errorStream;
+}
+std::ostream& OSDL::Log::startWarning() {
+	mutex.lock();
+	return warningStream;
+}
+std::ostream& OSDL::Log::startInfo() {
+	mutex.lock();
+	return infoStream;
+}
+std::ostream& OSDL::Log::startDebug() {
+	mutex.lock();
+	return debugStream;
+}
 
 void OSDL::Log::outputTimestamp() {
 	std::time_t time = std::time(0);
@@ -90,6 +111,7 @@ void OSDL::Log::outputTimestamp() {
 	}
 	std::cout << now->tm_sec << "]";
 }
+
 void OSDL::Log::outputThreadID() {
 	srand(SDL_ThreadID());
 	uint8 red = rand() & 0xff;
@@ -100,4 +122,29 @@ void OSDL::Log::outputThreadID() {
 			<< (uint16) ((uint8) (green + 128)) << ";"
 			<< (uint16) ((uint8) (blue + 128)) << "m" << SDL_ThreadID()
 			<< "\033[0m";
+}
+
+std::ostream& OSDL::Log::end(std::ostream &ostream) {
+	if (&ostream == &errorStream) {
+		error(errorStream.str().c_str());
+		errorStream = std::stringstream();
+		mutex.unlock();
+	} else if (&ostream == &warningStream) {
+		warning(warningStream.str().c_str());
+		warningStream = std::stringstream();
+		mutex.unlock();
+	} else if (&ostream == &infoStream) {
+		info(infoStream.str().c_str());
+		infoStream = std::stringstream();
+		mutex.unlock();
+	} else if (&ostream == &debugStream) {
+		debug(debugStream.str().c_str());
+		debugStream = std::stringstream();
+		mutex.unlock();
+	} else {
+		mutex.unlock();
+		OSDL::Log::error(
+				"OSDL::Log::end can only be used within OSDL::Log streams");
+	}
+	return ostream;
 }

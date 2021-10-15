@@ -67,7 +67,8 @@ void OSDL::Event::updateEventData() {
 			break;
 		case SDL_WINDOWEVENT_FOCUS_GAINED:
 			if (SDL_CaptureMouse(SDL_TRUE) == -1) {
-				OSDL::Log::info(OSDL::SDLException().what());
+				OSDL::Log::startInfo() << OSDL::SDLException().what()
+						<< OSDL::Log::end;
 			}
 			break;
 		}

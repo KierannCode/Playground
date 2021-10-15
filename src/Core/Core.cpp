@@ -107,7 +107,7 @@ void Core::loopCode() {
 				<< realfp10s % 10 << "fps, desync : "
 				<< (int) (frame * 1000 / framerate - OSDL::Timer::getTicks()
 						+ firstTick) << "ms";
-		OSDL::Log::info(message.str().c_str());
+		OSDL::Log::startInfo() << message.str().c_str() << OSDL::Log::end;
 		refreshTick = OSDL::Timer::getTicks() + refreshDelay;
 		referenceFrame = 0;
 
@@ -117,7 +117,7 @@ void Core::loopCode() {
 	software->manageEvents(eventQueue);
 	software->updateFrame();
 	if (software->isOver()) {
-		OSDL::Log::info("Software change requested");
+		OSDL::Log::startInfo() << "Software change requested" << OSDL::Log::end;
 		Software *newSoftware = nullptr;
 		switch (software->getExitValue()) {
 		case -1:

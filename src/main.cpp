@@ -19,6 +19,7 @@
 
 int main(int argc, char **argv) {
 	OSDL::Log::setLevel(OSDL::LogLevel::DEBUG);
+	OSDL::Log::startDebug() << 5 << OSDL::Log::end;
 
 	OSDL::System::initialize();
 

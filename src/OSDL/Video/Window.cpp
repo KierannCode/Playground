@@ -65,7 +65,7 @@ void OSDL::Window::updateSurface(OSDL::Surface *surface) {
 	//SDL_RenderPresent(renderer);
 	//SDL_DestroyRenderer(renderer);
 	if (SDL_UpdateWindowSurface(window) == -1) {
-		OSDL::Log::warning(OSDL::SDLException().what());
+		OSDL::Log::startWarning() << OSDL::SDLException().what() << OSDL::Log::end;
 	}
 }
 

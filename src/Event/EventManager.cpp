@@ -46,7 +46,7 @@ void EventManager::start() {
 			eventQueue->push(*eventData);
 			switch (eventData->getEventType()) {
 			case OSDL::EventType::WINDOW_CLOSED:
-				OSDL::Log::info("Close request");
+				OSDL::Log::startInfo() << "Close request" << OSDL::Log::end;
 				running = false;
 				break;
 			case OSDL::EventType::WINDOW_RESIZED:

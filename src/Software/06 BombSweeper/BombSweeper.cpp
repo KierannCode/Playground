@@ -265,9 +265,7 @@ void BombSweeper::onKeyboardKeyPressed(OSDL::KeyboardKey key) {
 void BombSweeper::fill() {
 	if (selectedBox >= 0 && selectedBox < width * height) {
 		if (selectedType == HIDDEN && visibleBoard[selectedBox] == HIDDEN) {
-			OSDL::Log::debug("Trying to uncover hidden box");
 			BoxContent hiddenType = hiddenBoard[selectedBox];
-			OSDL::Log::debug("Hidden box uncovered");
 			visibleBoard[selectedBox] = hiddenType;
 			int index = 0;
 			while (index < availableBoxCount
