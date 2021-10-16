@@ -43,7 +43,6 @@ OSDL::Size OSDL::Window::getHeight() const {
 }
 
 void OSDL::Window::updateSurface(OSDL::Surface *surface) {
-
 	SDL_Rect r;
 	r.x = 200;
 	r.y = 100;
@@ -58,12 +57,6 @@ void OSDL::Window::updateSurface(OSDL::Surface *surface) {
 			== -1) {
 		throw OSDL::SDLException();
 	}
-	SDL_Renderer *renderer = SDL_CreateRenderer(window, -1, 0);
-	//SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255);
-	//SDL_RenderFillRect(renderer, &r);
-	//SDL_RenderDrawPoint(renderer, 400, 400);
-	//SDL_RenderPresent(renderer);
-	//SDL_DestroyRenderer(renderer);
 	if (SDL_UpdateWindowSurface(window) == -1) {
 		OSDL::Log::startWarning() << OSDL::SDLException().what() << OSDL::Log::end;
 	}

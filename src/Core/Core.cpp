@@ -35,7 +35,7 @@ Core::Core(Renderer &renderer, const OSDL::Window &window, float framerate) {
 
 	eventQueue = nullptr;
 
-	software = new BombSweeper();
+	software = new Menu();
 	software->setWindowSize(window.getWidth(), window.getHeight());
 	this->framerate = framerate;
 
