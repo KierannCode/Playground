@@ -1,11 +1,9 @@
 /*
- * Renderer.cpp
+ * RenderingThread.cpp
  *
  *  Created on: 9 juil. 2021
  *      Author: Kierann
  */
-
-#include "../Video/Renderer.hpp"
 
 #include "../Software/SoftwareRenderer.hpp"
 
@@ -17,8 +15,9 @@
 
 #include "../OSDL/Video/Window.hpp"
 #include "../OSDL/Video/Surface.hpp"
+#include "RenderingThread.hpp"
 
-Renderer::Renderer(OSDL::Window &window) {
+RenderingThread::RenderingThread(OSDL::Window &window) {
 	this->window = &window;
 
 	softwareRenderer = nullptr;
@@ -31,30 +30,30 @@ Renderer::Renderer(OSDL::Window &window) {
 	renderingOver = new OSDL::AtomicBoolean(true);
 }
 
-void Renderer::setSoftwareRenderer(SoftwareRenderer *softwareRenderer) {
+void RenderingThread::setSoftwareRenderer(SoftwareRenderer *softwareRenderer) {
 	softwareMutex->lock();
 	this->softwareRenderer = softwareRenderer;
 	softwareMutex->unlock();
 }
 
-void Renderer::requestSurfaceResizing() {
+void RenderingThread::requestSurfaceResizing() {
 	surfaceSizeChanged->setValue(true);
 }
 
-bool Renderer::isReady() const {
+bool RenderingThread::isReady() const {
 	return renderingOver->getValue();
 }
-void Renderer::prepareRendering() {
+void RenderingThread::prepareRendering() {
 	renderingOver->setValue(false);
 }
-Renderer::~Renderer() {
+RenderingThread::~RenderingThread() {
 	delete renderingOver;
 	delete surfaceSizeChanged;
 	delete renderingSurface;
 	delete softwareMutex;
 }
 
-void Renderer::loopCode() {
+void RenderingThread::loopCode() {
 	if (surfaceSizeChanged->getValue()) {
 		delete renderingSurface;
 		renderingSurface = new OSDL::Surface(window->getWidth(),

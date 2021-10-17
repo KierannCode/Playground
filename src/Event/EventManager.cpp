@@ -20,11 +20,11 @@
 #include "../OSDL/Thread/Semaphore.hpp"
 #include "../OSDL/Time/Timer.hpp"
 
-#include "../Video/Renderer.hpp"
 #include "../Core/Core.hpp"
+#include "../Video/RenderingThread.hpp"
 
-EventManager::EventManager(Renderer &renderer, Core &core) {
-	this->renderer = &renderer;
+EventManager::EventManager(RenderingThread &renderingThread, Core &core) {
+	this->renderingThread = &renderingThread;
 
 	event = new OSDL::Event;
 	eventQueue = new OSDL::AtomicQueue;
@@ -50,7 +50,7 @@ void EventManager::start() {
 				running = false;
 				break;
 			case OSDL::EventType::WINDOW_RESIZED:
-				renderer->requestSurfaceResizing();
+				renderingThread->requestSurfaceResizing();
 				break;
 			}
 		}

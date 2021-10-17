@@ -15,7 +15,7 @@
 
 #include "OSDL/System.hpp"
 #include "OSDL/Resilience/Log.hpp"
-#include "Video/Renderer.hpp"
+#include "Video/RenderingThread.hpp"
 
 int main(int argc, char **argv) {
 	OSDL::Log::setLevel(OSDL::LogLevel::DEBUG);
@@ -28,16 +28,16 @@ int main(int argc, char **argv) {
 	SDL_DisplayMode mode;
 	SDL_GetDesktopDisplayMode(0, &mode);
 
-	Renderer renderer(window);
-	Core core(renderer, window, mode.refresh_rate * 2);
-	EventManager eventManager(renderer, core);
+	RenderingThread renderingThread(window);
+	Core core(renderingThread, window, mode.refresh_rate * 2);
+	EventManager eventManager(renderingThread, core);
 
-	renderer.start();
+	renderingThread.start();
 	core.start();
 	eventManager.start();
 
 	core.stop();
-	renderer.stop();
+	renderingThread.stop();
 
 	OSDL::System::quit();
 

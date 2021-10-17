@@ -13,7 +13,7 @@
 #include "../OSDL/Types.hpp"
 
 class Software;
-class Renderer;
+class RenderingThread;
 
 namespace OSDL {
 class AtomicQueue;
@@ -22,7 +22,7 @@ class Window;
 
 class Core: public OSDL::ThreadLoop {
 public:
-	Core(Renderer &renderer, const OSDL::Window &window, float framerate);
+	Core(RenderingThread &renderingThread, const OSDL::Window &window, float framerate);
 
 	void setEventQueue(OSDL::AtomicQueue *eventQueue);
 
@@ -32,7 +32,7 @@ private:
 	void loopCode();
 	void quit();
 
-	Renderer *renderer;
+	RenderingThread *renderingThread;
 
 	OSDL::AtomicQueue *eventQueue;
 

@@ -7,8 +7,6 @@
 
 #include "Core.hpp"
 
-#include "../Video/Renderer.hpp"
-
 #include "../Software/Software.hpp"
 #include "../Software/Menu/Menu.hpp"
 #include "../Software/00 Snake/Snake.hpp"
@@ -29,9 +27,10 @@
 #include <ctime>
 
 #include <sstream>
+#include "../Video/RenderingThread.hpp"
 
-Core::Core(Renderer &renderer, const OSDL::Window &window, float framerate) {
-	this->renderer = &renderer;
+Core::Core(RenderingThread &renderingThread, const OSDL::Window &window, float framerate) {
+	this->renderingThread = &renderingThread;
 
 	eventQueue = nullptr;
 
@@ -49,7 +48,7 @@ Core::Core(Renderer &renderer, const OSDL::Window &window, float framerate) {
 	coreLags = 0;
 	frameSkips = 0;
 
-	renderer.setSoftwareRenderer(software->getSoftwareRenderer());
+	renderingThread.setSoftwareRenderer(software->getSoftwareRenderer());
 }
 
 void Core::setEventQueue(OSDL::AtomicQueue *eventQueue) {
@@ -71,10 +70,10 @@ void Core::initialize() {
 }
 
 void Core::loopCode() {
-	if (renderer->isReady()) {
+	if (renderingThread->isReady()) {
 		software->updateRenderingData();
-		renderer->prepareRendering();
-		renderer->iterate();
+		renderingThread->prepareRendering();
+		renderingThread->iterate();
 	} else {
 		++frameSkips;
 	}
@@ -134,7 +133,7 @@ void Core::loopCode() {
 		}
 		if (newSoftware != nullptr) {
 			newSoftware->importWindowSize(software);
-			renderer->setSoftwareRenderer(newSoftware->getSoftwareRenderer());
+			renderingThread->setSoftwareRenderer(newSoftware->getSoftwareRenderer());
 			delete software;
 			software = newSoftware;
 		}

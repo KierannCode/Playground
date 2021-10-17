@@ -1,12 +1,12 @@
 /*
- * Renderer.hpp
+ * RenderingThread.hpp
  *
  *  Created on: 9 juil. 2021
  *      Author: Kierann
  */
 
-#ifndef SRC_VIDEO_RENDERER_HPP_
-#define SRC_VIDEO_RENDERER_HPP_
+#ifndef SRC_VIDEO_RENDERINGTHREAD_HPP_
+#define SRC_VIDEO_RENDERINGTHREAD_HPP_
 
 #include "../OSDL/Thread/ThreadLoop.hpp"
 
@@ -20,9 +20,9 @@ class AtomicBoolean;
 class Mutex;
 }
 
-class Renderer: public OSDL::ThreadLoop {
+class RenderingThread: public OSDL::ThreadLoop {
 public:
-	Renderer(OSDL::Window &window);
+	RenderingThread(OSDL::Window &window);
 
 	void setSoftwareRenderer(SoftwareRenderer *softwareRenderer);
 
@@ -31,7 +31,7 @@ public:
 	bool isReady() const;
 	void prepareRendering();
 
-	Renderer::~Renderer();
+	RenderingThread::~RenderingThread();
 private:
 	OSDL::Window *window;
 
@@ -47,4 +47,4 @@ private:
 	void loopCode();
 };
 
-#endif /* SRC_VIDEO_RENDERER_HPP_ */
+#endif /* SRC_VIDEO_RENDERINGTHREAD_HPP_ */
