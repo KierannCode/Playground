@@ -104,17 +104,17 @@ void BombSweeperRenderer::render(OSDL::Surface *surface) {
 			if (board[i + j * width] == HIDDEN) {
 				if (p <= min + 0.01
 						&& expected[i + j * width] / bestExpected >= 0.95) {
-					surface->fillRect(x, y, 64, 64, OSDL::Color(255, 255, 255));
-				} else {
-					surface->fillRect(x, y, 64, 64,
-							getExpectancyColor(
-									expected[i + j * width] / maxExpected));
+					surface->fillRect(x - 8, y - 8, 80, 80,
+							OSDL::Color(255, 255, 255));
+					surface->fillRect(x - 4, y - 4, 72, 72,
+							OSDL::Color(0, 0, 0));
 				}
+				surface->fillRect(x, y, 64, 64,
+						getExpectancyColor(
+								expected[i + j * width] / maxExpected));
 				surface->fillDisk(x + 22, y + 32, 20, OSDL::Color(0, 0, 0));
 				if (rupoorsLeft + bombsLeft > 0) {
-					surface->fillDisk(x + 22, y + 32,
-							20 * p,
-							getRiskColor(p));
+					surface->fillDisk(x + 22, y + 32, 20 * p, getRiskColor(p));
 				}
 				surface->fillRect(x + 46, y + 2, 16, 60, OSDL::Color(0, 0, 0));
 				float minibarX = x + 49;

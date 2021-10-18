@@ -13,11 +13,7 @@
 
 #include "../../OSDL/Resilience/Log.hpp"
 
-#include "../../OSDL/Video/Surface.hpp"
-#include "../../OSDL/Video/Color.hpp"
-
 BombSweeper::BombSweeper() {
-
 	width = 8;
 	height = 5;
 	rupoorCount = 8;
@@ -41,7 +37,7 @@ BombSweeper::BombSweeper() {
 	hiddenBoard = tryBoardCompletion(visibleBoard, width, height, rupoorsLeft,
 			bombsLeft);
 
-	attemptsPerFrame = 100;
+	attemptsPerFrame = 1000;
 	total = 0;
 
 	probability = new double*[7];
