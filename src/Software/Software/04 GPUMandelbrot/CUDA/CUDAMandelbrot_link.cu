@@ -5,5 +5,5 @@
  *      Author: Kierann
  */
 
-#include "CUDAComplex.cus"
-#include "CUDAMandelbrot.cus"
+#include "CUDAComplex.cu"
+#include "CUDAMandelbrot.cu"
