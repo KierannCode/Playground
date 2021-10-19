@@ -1,12 +1,12 @@
 /*
- * Core.hpp
+ * CoreThread.hpp
  *
  *  Created on: 9 juil. 2021
  *      Author: Kierann
  */
 
-#ifndef SRC_CORE_CORE_HPP_
-#define SRC_CORE_CORE_HPP_
+#ifndef SRC_CORE_CORETHREAD_HPP_
+#define SRC_CORE_CORETHREAD_HPP_
 
 #include "../OSDL/Thread/ThreadLoop.hpp"
 
@@ -20,13 +20,13 @@ class AtomicQueue;
 class Window;
 }
 
-class Core: public OSDL::ThreadLoop {
+class CoreThread: public OSDL::ThreadLoop {
 public:
-	Core(RenderingThread &renderingThread, const OSDL::Window &window, float framerate);
+	CoreThread(RenderingThread &renderingThread, const OSDL::Window &window, float framerate);
 
 	void setEventQueue(OSDL::AtomicQueue *eventQueue);
 
-	~Core();
+	~CoreThread();
 private:
 	void initialize();
 	void loopCode();
@@ -50,4 +50,4 @@ private:
 	uint32 frameSkips;
 };
 
-#endif /* SRC_CORE_CORE_HPP_ */
+#endif /* SRC_CORE_CORETHREAD_HPP_ */

@@ -1,11 +1,9 @@
 /*
- * Core.cpp
+ * CoreThread.cpp
  *
  *  Created on: 9 juil. 2021
  *      Author: Kierann
  */
-
-#include "Core.hpp"
 
 #include "../Software/Software.hpp"
 #include "../Software/Menu/Menu.hpp"
@@ -28,8 +26,9 @@
 
 #include <sstream>
 #include "../Video/RenderingThread.hpp"
+#include "CoreThread.hpp"
 
-Core::Core(RenderingThread &renderingThread, const OSDL::Window &window, float framerate) {
+CoreThread::CoreThread(RenderingThread &renderingThread, const OSDL::Window &window, float framerate) {
 	this->renderingThread = &renderingThread;
 
 	eventQueue = nullptr;
@@ -51,15 +50,15 @@ Core::Core(RenderingThread &renderingThread, const OSDL::Window &window, float f
 	renderingThread.setSoftwareRenderer(software->getSoftwareRenderer());
 }
 
-void Core::setEventQueue(OSDL::AtomicQueue *eventQueue) {
+void CoreThread::setEventQueue(OSDL::AtomicQueue *eventQueue) {
 	this->eventQueue = eventQueue;
 }
 
-Core::~Core() {
+CoreThread::~CoreThread() {
 	delete software;
 }
 
-void Core::initialize() {
+void CoreThread::initialize() {
 	std::srand(std::time(nullptr));
 
 	firstTick = OSDL::Timer::getTicks();
@@ -69,7 +68,7 @@ void Core::initialize() {
 	iterate();
 }
 
-void Core::loopCode() {
+void CoreThread::loopCode() {
 	if (renderingThread->isReady()) {
 		software->updateRenderingData();
 		renderingThread->prepareRendering();
@@ -143,6 +142,6 @@ void Core::loopCode() {
 	iterate();
 }
 
-void Core::quit() {
+void CoreThread::quit() {
 }
 

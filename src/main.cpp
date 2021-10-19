@@ -10,9 +10,9 @@
 #include <SDL_Video.h>
 
 #include "Event/EventManager.hpp"
-#include "Core/Core.hpp"
 #include <SDL_mutex.h>
 
+#include "Core/CoreThread.hpp"
 #include "OSDL/System.hpp"
 #include "OSDL/Resilience/Log.hpp"
 #include "Video/RenderingThread.hpp"
@@ -28,14 +28,14 @@ int main(int argc, char **argv) {
 	SDL_GetDesktopDisplayMode(0, &mode);
 
 	RenderingThread renderingThread(window);
-	Core core(renderingThread, window, mode.refresh_rate * 2);
-	EventManager eventManager(renderingThread, core);
+	CoreThread coreThread(renderingThread, window, mode.refresh_rate * 2);
+	EventManager eventManager(renderingThread, coreThread);
 
 	renderingThread.start();
-	core.start();
+	coreThread.start();
 	eventManager.start();
 
-	core.stop();
+	coreThread.stop();
 	renderingThread.stop();
 
 	OSDL::System::quit();

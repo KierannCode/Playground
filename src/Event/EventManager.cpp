@@ -20,10 +20,10 @@
 #include "../OSDL/Thread/Semaphore.hpp"
 #include "../OSDL/Time/Timer.hpp"
 
-#include "../Core/Core.hpp"
+#include "../Core/CoreThread.hpp"
 #include "../Video/RenderingThread.hpp"
 
-EventManager::EventManager(RenderingThread &renderingThread, Core &core) {
+EventManager::EventManager(RenderingThread &renderingThread, CoreThread &coreThread) {
 	this->renderingThread = &renderingThread;
 
 	event = new OSDL::Event;
@@ -31,7 +31,7 @@ EventManager::EventManager(RenderingThread &renderingThread, Core &core) {
 
 	running = true;
 
-	core.setEventQueue(eventQueue);
+	coreThread.setEventQueue(eventQueue);
 }
 
 OSDL::AtomicQueue* EventManager::getEventQueue() const {

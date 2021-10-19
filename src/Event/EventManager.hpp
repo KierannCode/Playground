@@ -9,7 +9,7 @@
 #define SRC_EVENT_EVENTMANAGER_HPP_
 
 class RenderingThread;
-class Core;
+class CoreThread;
 
 namespace OSDL {
 class Event;
@@ -18,7 +18,7 @@ class AtomicQueue;
 
 class EventManager {
 public:
-	EventManager(RenderingThread &renderingThread, Core &core);
+	EventManager(RenderingThread &renderingThread, CoreThread &coreThread);
 
 	OSDL::AtomicQueue* getEventQueue() const;
 
