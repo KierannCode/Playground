@@ -15,7 +15,9 @@
 
 #include <exception>
 
-void OSDL::ThreadLoop::start() {
+using namespace OSDL;
+
+void ThreadLoop::start() {
 	running = new OSDL::AtomicBoolean(true);
 	startIteration = new OSDL::Semaphore;
 	thread = SDL_CreateThread(threadMethod, "", this);

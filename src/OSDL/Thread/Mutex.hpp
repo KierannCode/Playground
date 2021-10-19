@@ -25,26 +25,23 @@ namespace OSDL {
 class Mutex {
 public:
 	/**
-	 * Creates a new mutex, unlocked by default.
+	 * @brief Creates a new mutex, unlocked by default.
 	 *
-	 * @throws OSDL::SDLException if the mutex could not be created by SDL
+	 * @throw OSDL::SDLException if the mutex could not be created by SDL
 	 */
 	Mutex();
 
 	/**
-	 * Locks the mutex.
+	 * @brief Locks the mutex.
 	 *
-	 * When a mutex is locked in a thread, this method will pause any other thread
+	 * @details When a mutex is locked in a thread, this method will pause any other thread
 	 * trying to lock it, until it is unlocked in the thread where it has been locked.
 	 * If a mutex is locked several times in a row in the same thread, it must be unlocked the
 	 * same amount of times to be available in other threads, this is called recursive locking.
 	 *
 	 * @see OSDL::Mutex::unlock
 	 *
-	 * @throws OSDL::SDLException if the mutex could not be locked by SDL
-	 *
-	 * @exceptsafe If the methods throws an exception, the mutex might be corrupted and
-	 * shall not be used anymore.
+	 * @throw OSDL::SDLException if the mutex could not be locked by SDL
 	 */
 	void lock();
 	/**
@@ -57,10 +54,7 @@ public:
 	 *
 	 * @see OSDL::Mutex::lock
 	 *
-	 * @throws OSDL::SDLException if the mutex could not be unlocked by SDL
-	 *
-	 * @exceptsafe If the methods throws an exception, the mutex might be corrupted and
-	 * shall not be used anymore. Can cause undefined behavior.
+	 * @throw OSDL::SDLException if the mutex could not be unlocked by SDL
 	 */
 	void unlock();
 
@@ -69,8 +63,6 @@ public:
 	 *
 	 * A mutex must always be destroyed in its unlocked state.
 	 * Destroying a locked mutex results in undefined behavior.
-	 *
-	 * @exceptsafe Shall not throw exceptions. Can cause undefined behavior.
 	 */
 	~Mutex();
 private:
