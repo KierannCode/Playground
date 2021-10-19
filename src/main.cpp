@@ -28,7 +28,7 @@ int main(int argc, char **argv) {
 	SDL_GetDesktopDisplayMode(0, &mode);
 
 	RenderingThread renderingThread(window);
-	CoreThread coreThread(renderingThread, window, mode.refresh_rate * 2);
+	CoreThread coreThread(renderingThread, window, mode.refresh_rate);
 	EventManager eventManager(renderingThread, coreThread);
 
 	renderingThread.start();
