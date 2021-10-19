@@ -8,8 +8,8 @@
 #ifndef SRC_SOFTWARE_04_GPUMANDELBROT_CUDA_CUDAMANDELBROT_CUH_
 #define SRC_SOFTWARE_04_GPUMANDELBROT_CUDA_CUDAMANDELBROT_CUH_
 
-#include "CUDAComplex.cuh"
 #include <cstdint>
+#include "../../../Software/04 GPUMandelbrot/CUDA/CUDAComplex.cuh"
 
 void allocateDeviceAttributes(CUDAComplex **d_complex, size_t **d_index, int w, int h);
 void freeDeviceAttributes(CUDAComplex *d_complex, size_t *d_index);

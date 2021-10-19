@@ -8,9 +8,9 @@
 #ifndef SRC_SOFTWARE_04_GPUMANDELBROT_GPUMANDELBROT_HPP_
 #define SRC_SOFTWARE_04_GPUMANDELBROT_GPUMANDELBROT_HPP_
 
-#include "..\Software.hpp"
+#include "CUDA/CUDAComplex.cuh"
+#include "../../Software.hpp"
 
-#include "CUDA\CUDAComplex.cuh"
 
 class GPUMandelbrot: public Software {
 private:

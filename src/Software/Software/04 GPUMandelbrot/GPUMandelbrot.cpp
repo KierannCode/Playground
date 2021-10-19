@@ -7,9 +7,8 @@
 
 #include "GPUMandelbrot.hpp"
 
-#include "CUDA\CUDAMandelbrot.cuh"
-
-#include "../../Event/EventManager.hpp"
+#include "../../../Event/EventManager.hpp"
+#include "CUDA/CUDAMandelbrot.cuh"
 
 GPUMandelbrot::GPUMandelbrot() {
 	Ox = 0;

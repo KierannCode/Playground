@@ -8,9 +8,9 @@
 #ifndef SRC_SOFTWARE_06_BOMBSWEEPER_BOMBSWEEPER_HPP_
 #define SRC_SOFTWARE_06_BOMBSWEEPER_BOMBSWEEPER_HPP_
 
-#include "../Software.hpp"
-
 #include "BombSweeperTypes.hpp"
+#include "../../Software.hpp"
+
 
 class BombSweeperRenderer;
 

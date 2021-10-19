@@ -5,9 +5,9 @@
  *      Author: Kierann
  */
 
-#include "Text.hpp"
+#include "../../Software/07 Text/Text.hpp"
 
-#include "TextRenderer.hpp"
+#include "../../Software/07 Text/TextRenderer.hpp"
 
 Text::Text() {
 	renderer = new TextRenderer();

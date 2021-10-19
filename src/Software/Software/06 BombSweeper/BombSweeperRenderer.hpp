@@ -8,10 +8,9 @@
 #ifndef SRC_SOFTWARE_06_BOMBSWEEPER_BOMBSWEEPERRENDERER_HPP_
 #define SRC_SOFTWARE_06_BOMBSWEEPER_BOMBSWEEPERRENDERER_HPP_
 
+#include "../../../OSDL/Types.hpp"
 #include "BombSweeperTypes.hpp"
-
-#include "../../OSDL/Types.hpp"
-#include "../SoftwareRenderer.hpp"
+#include "../../SoftwareRenderer.hpp"
 
 namespace OSDL {
 class Color;

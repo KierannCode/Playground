@@ -7,10 +7,10 @@
 
 #include "BombSweeperRenderer.hpp"
 
-#include "../../OSDL/Resilience/Log.hpp"
+#include "../../../OSDL/Resilience/Log.hpp"
 
-#include "../../OSDL/Video/Surface.hpp"
-#include "../../OSDL/Video/Color.hpp"
+#include "../../../OSDL/Video/Surface.hpp"
+#include "../../../OSDL/Video/Color.hpp"
 
 BombSweeperRenderer::BombSweeperRenderer(int width, int height, int rupoorCount,
 		int bombCount) {

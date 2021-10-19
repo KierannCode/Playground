@@ -8,7 +8,7 @@
 #ifndef SRC_SOFTWARE_03_GAMEOFLIFE_GAMEOFLIFE_HPP_
 #define SRC_SOFTWARE_03_GAMEOFLIFE_GAMEOFLIFE_HPP_
 
-#include "../Software.hpp"
+#include "../../Software.hpp"
 
 struct BoardState {
 	bool *cellState;

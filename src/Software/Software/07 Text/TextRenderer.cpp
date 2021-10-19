@@ -7,10 +7,10 @@
 
 #include "TextRenderer.hpp"
 
-#include "../../OSDL/Video/Surface.hpp"
-#include "../../OSDL/Video/Color.hpp"
+#include "../../../OSDL/Video/Surface.hpp"
+#include "../../../OSDL/Video/Color.hpp"
 
-#include "../../OSDL/Time/Timer.hpp"
+#include "../../../OSDL/Time/Timer.hpp"
 
 TextRenderer::TextRenderer() {
 	size = 3;

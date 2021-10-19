@@ -8,7 +8,7 @@
 #ifndef SRC_SOFTWARE_07_TEXT_TEXTRENDERER_HPP_
 #define SRC_SOFTWARE_07_TEXT_TEXTRENDERER_HPP_
 
-#include "../SoftwareRenderer.hpp"
+#include "../../SoftwareRenderer.hpp"
 
 namespace OSDL {
 class Surface;

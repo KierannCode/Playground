@@ -6,12 +6,11 @@
  */
 
 #include "GameOfLife.hpp"
+
 #include <stdlib.h>
 #include <time.h>
 
-#include "../../Event/EventManager.hpp"
-
-#include <iostream>
+#include "../../../Event/EventManager.hpp"
 
 GameOfLife::GameOfLife() {
 	width = 200;

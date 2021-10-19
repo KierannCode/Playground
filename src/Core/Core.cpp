@@ -11,13 +11,13 @@
 
 #include "../Software/Software.hpp"
 #include "../Software/Menu/Menu.hpp"
-#include "../Software/00 Snake/Snake.hpp"
-#include "../Software/01 RayTracing/RayTracing.hpp"
-#include "../Software/02 Chess/Chess.hpp"
-#include "../Software/03 GameOfLife/GameOfLife.hpp"
-#include "../Software/04 GPUMandelbrot/GPUMandelbrot.hpp"
-#include "../Software/06 BombSweeper/BombSweeper.hpp"
-#include "../Software/07 Text/Text.hpp"
+#include "../Software/Software/00 Snake/Snake.hpp"
+#include "../Software/Software/01 RayTracing/RayTracing.hpp"
+#include "../Software/Software/02 Chess/Chess.hpp"
+#include "../Software/Software/03 GameOfLife/GameOfLife.hpp"
+#include "../Software/Software/04 GPUMandelbrot/GPUMandelbrot.hpp"
+#include "../Software/Software/06 BombSweeper/BombSweeper.hpp"
+#include "../Software/Software/07 Text/Text.hpp"
 
 #include "../OSDL/Resilience/Log.hpp"
 

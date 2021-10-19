@@ -7,14 +7,11 @@
 
 #include "BombSweeper.hpp"
 
+#include "../../../Event/EventManager.hpp"
+
+#include "../../../OSDL/Resilience/Log.hpp"
+
 #include "BombSweeperRenderer.hpp"
-
-#include "../../Event/EventManager.hpp"
-
-#include "../../OSDL/Resilience/Log.hpp"
-
-#include "../../OSDL/Video/Surface.hpp"
-#include "../../OSDL/Video/Color.hpp"
 
 BombSweeper::BombSweeper() {
 

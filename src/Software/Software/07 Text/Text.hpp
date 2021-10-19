@@ -8,7 +8,7 @@
 #ifndef SRC_SOFTWARE_07_Text_Text_HPP_
 #define SRC_SOFTWARE_07_Text_Text_HPP_
 
-#include "../Software.hpp"
+#include "../../Software.hpp"
 
 class TextRenderer;
 
