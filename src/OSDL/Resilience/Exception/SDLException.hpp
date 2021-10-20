@@ -14,6 +14,7 @@ namespace OSDL {
 class SDLException: public OSDL::Exception {
 public:
 	SDLException();
+	SDLException(const char *adviceMessage);
 };
 }
 
