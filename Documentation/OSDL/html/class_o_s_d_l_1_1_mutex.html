@@ -74,6 +74,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Implementation of a mutex using SDL primitives.  
+ <a href="class_o_s_d_l_1_1_mutex.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_mutex_8hpp_source.html">Mutex.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -85,8 +88,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a2dc233109d5ae8ba27f764baa7571ac4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Locks the mutex.  <a href="class_o_s_d_l_1_1_mutex.html#a2dc233109d5ae8ba27f764baa7571ac4">More...</a><br /></td></tr>
 <tr class="separator:a2dc233109d5ae8ba27f764baa7571ac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38322fd6ca42efb755dca567d2e1ae72"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_d_l_1_1_mutex.html#a38322fd6ca42efb755dca567d2e1ae72">unlock</a> ()</td></tr>
+<tr class="memdesc:a38322fd6ca42efb755dca567d2e1ae72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unlocks the mutex.  <a href="class_o_s_d_l_1_1_mutex.html#a38322fd6ca42efb755dca567d2e1ae72">More...</a><br /></td></tr>
 <tr class="separator:a38322fd6ca42efb755dca567d2e1ae72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54bd659cfdbc3329ca05c3f95d777da5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_d_l_1_1_mutex.html#a54bd659cfdbc3329ca05c3f95d777da5">~Mutex</a> ()</td></tr>
+<tr class="memdesc:a54bd659cfdbc3329ca05c3f95d777da5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys the mutex.  <a href="class_o_s_d_l_1_1_mutex.html#a54bd659cfdbc3329ca05c3f95d777da5">More...</a><br /></td></tr>
 <tr class="separator:a54bd659cfdbc3329ca05c3f95d777da5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
@@ -95,8 +100,11 @@ Private Attributes</h2></td></tr>
 <tr class="separator:aa7bc083102289515817881575a5b192c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Implementation of a mutex using SDL primitives.</p>
-<p>This implementation is the Object Oriented version of SDL_mutex. A mutex shall be used to prevent concurrent access to shared ressources between several threads. The mutex must be locked right before using the ressources, and unlocked right after. This implementation supports recursive locking. </p>
+<div class="textblock"><p>Implementation of a mutex using SDL primitives. </p>
+<p>This implementation is the Object Oriented version of SDL_mutex.<br  />
+A mutex shall be used to prevent concurrent access to shared ressources between threads.<br  />
+A mutex must be locked right before using the ressources, and unlocked right after.<br  />
+This implementation supports recursive locking. </p>
 
 <p class="definition">Definition at line <a class="el" href="_mutex_8hpp_source.html#l00025">25</a> of file <a class="el" href="_mutex_8hpp_source.html">Mutex.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -139,8 +147,10 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Destroys the mutex.</p>
-<p>A mutex must always be destroyed in its unlocked state. Destroying a locked mutex results in undefined behavior. </p>
+
+<p>Destroys the mutex. </p>
+<p>A mutex must always be destroyed in its unlocked state.<br  />
+Destroying a locked mutex results in undefined behavior. </p>
 
 </div>
 </div>
@@ -161,8 +171,9 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Locks the mutex. </p>
-<p>When a mutex is locked in a thread, this method will pause any other thread trying to lock it, until it is unlocked in the thread where it has been locked. If a mutex is locked several times in a row in the same thread, it must be unlocked the same amount of times to be available in other threads, this is called recursive locking.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_o_s_d_l_1_1_mutex.html#a38322fd6ca42efb755dca567d2e1ae72">OSDL::Mutex::unlock</a></dd></dl>
+<p>When a mutex is locked in a thread, this method will pause any other thread trying to lock it until it is unlocked in the thread where it has been locked.<br  />
+If a mutex is locked several times in a row in the same thread, it must be unlocked the same amount of times to be available in other threads (recursive locking).</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_o_s_d_l_1_1_mutex.html#a38322fd6ca42efb755dca567d2e1ae72" title="Unlocks the mutex.">OSDL::Mutex::unlock</a></dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname"><a class="el" href="class_o_s_d_l_1_1_s_d_l_exception.html">OSDL::SDLException</a></td><td>if the mutex could not be locked by SDL </td></tr>
@@ -186,8 +197,11 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Unlocks the mutex.</p>
-<p>This method must be called when the mutex is locked in order to unlock it. If the mutex was locked several times in a row in the same thread, it must be unlocked the same number of times to be available in other threads. Calling this method when the mutex is not locked results in undefined behavior.</p>
+
+<p>Unlocks the mutex. </p>
+<p>This method must be called when the mutex is locked in order to unlock it.<br  />
+If the mutex was locked several times in a row in the same thread, it must be unlocked the same number of times to be available in other threads (recursive locking).<br  />
+Calling this method when the mutex is not locked results in undefined behavior.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_o_s_d_l_1_1_mutex.html#a2dc233109d5ae8ba27f764baa7571ac4" title="Locks the mutex.">OSDL::Mutex::lock</a></dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">

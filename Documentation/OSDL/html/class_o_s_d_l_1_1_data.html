@@ -73,6 +73,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Basic data interface.  
+ <a href="class_o_s_d_l_1_1_data.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_data_8hpp_source.html">Data.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for OSDL::Data:</div>
@@ -96,13 +99,17 @@ Inheritance diagram for OSDL::Data:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a6dc320774c16d37c2bc5caaa079eb539"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_o_s_d_l_1_1_data.html">OSDL::Data</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_d_l_1_1_data.html#a6dc320774c16d37c2bc5caaa079eb539">createCopy</a> () const =0</td></tr>
+<tr class="memdesc:a6dc320774c16d37c2bc5caaa079eb539"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a copy of the <a class="el" href="class_o_s_d_l_1_1_data.html" title="Basic data interface.">OSDL::Data</a> object.  <a href="class_o_s_d_l_1_1_data.html#a6dc320774c16d37c2bc5caaa079eb539">More...</a><br /></td></tr>
 <tr class="separator:a6dc320774c16d37c2bc5caaa079eb539"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b967b40ea08470922875f30cfbaa234"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_d_l_1_1_data.html#a7b967b40ea08470922875f30cfbaa234">~Data</a> ()</td></tr>
+<tr class="memdesc:a7b967b40ea08470922875f30cfbaa234"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_o_s_d_l_1_1_data.html" title="Basic data interface.">Data</a> destructor.  <a href="class_o_s_d_l_1_1_data.html#a7b967b40ea08470922875f30cfbaa234">More...</a><br /></td></tr>
 <tr class="separator:a7b967b40ea08470922875f30cfbaa234"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_data_8hpp_source.html#l00012">12</a> of file <a class="el" href="_data_8hpp_source.html">Data.hpp</a>.</p>
+<div class="textblock"><p>Basic data interface. </p>
+<p>This interface is used in some data structures to allow polymorphism without using templates. </p>
+
+<p class="definition">Definition at line <a class="el" href="_data_8hpp_source.html#l00018">18</a> of file <a class="el" href="_data_8hpp_source.html">Data.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7b967b40ea08470922875f30cfbaa234"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7b967b40ea08470922875f30cfbaa234">&#9670;&nbsp;</a></span>~Data()</h2>
@@ -126,6 +133,9 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p><a class="el" href="class_o_s_d_l_1_1_data.html" title="Basic data interface.">Data</a> destructor. </p>
+<p>This destructor is mandatory since <a class="el" href="class_o_s_d_l_1_1_data.html" title="Basic data interface.">OSDL::Data</a> is abstract, but does nothing since the class <a class="el" href="class_o_s_d_l_1_1_data.html" title="Basic data interface.">OSDL::Data</a> does not contain any attribute. </p>
 
 </div>
 </div>
@@ -152,6 +162,15 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Creates a copy of the <a class="el" href="class_o_s_d_l_1_1_data.html" title="Basic data interface.">OSDL::Data</a> object. </p>
+<p>This method returns a pointer to a new copy of the <a class="el" href="class_o_s_d_l_1_1_data.html" title="Basic data interface.">OSDL::Data</a> object.<br  />
+It is pure virtual and must be implemented in any derived class of <a class="el" href="class_o_s_d_l_1_1_data.html" title="Basic data interface.">OSDL::Data</a>.<br  />
+The copy is allocated with 'new' and must be manually destroyed using 'delete'.<br  />
+For consistency, if DerivedClass is a derived class of <a class="el" href="class_o_s_d_l_1_1_data.html" title="Basic data interface.">OSDL::Data</a>, its implementatio by default shall be as follows : </p><div class="fragment"><div class="line">DerivedClass *DerivedClass::createCopy() {</div>
+<div class="line">    <span class="keywordflow">return</span> <span class="keyword">new</span> DerivedClass(*<span class="keyword">this</span>)<span class="stringliteral">&#39;;</span></div>
+<div class="line"><span class="stringliteral">}</span></div>
+</div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd>A pointer to a copy of the <a class="el" href="class_o_s_d_l_1_1_data.html" title="Basic data interface.">OSDL::Data</a> object. </dd></dl>
 
 <p>Implemented in <a class="el" href="class_o_s_d_l_1_1_keyboard_key_pressed_data.html#ace076b37f36faca26fea31b3cfdaca0d">OSDL::KeyboardKeyPressedData</a>, <a class="el" href="class_o_s_d_l_1_1_keyboard_key_released_data.html#aad9209adb6ce7c46b41f737d49145df7">OSDL::KeyboardKeyReleasedData</a>, <a class="el" href="class_o_s_d_l_1_1_mouse_key_pressed_data.html#ae39cb8caf7d7afe5901bca33a4538cb7">OSDL::MouseKeyPressedData</a>, <a class="el" href="class_o_s_d_l_1_1_mouse_key_released_data.html#acfc9beef66eb165e4dee3174efa75cc7">OSDL::MouseKeyReleasedData</a>, <a class="el" href="class_o_s_d_l_1_1_mouse_motion_data.html#ab06cec2fbbb34b4c3f0d70413840d285">OSDL::MouseMotionData</a>, <a class="el" href="class_o_s_d_l_1_1_window_resized_data.html#afb955c1c3293e0e899d29d1e26afbb37">OSDL::WindowResizedData</a>, and <a class="el" href="class_o_s_d_l_1_1_window_closed_data.html#a9a09564690397f4f0154af21291ca5f0">OSDL::WindowClosedData</a>.</p>
 
