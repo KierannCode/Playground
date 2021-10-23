@@ -35,7 +35,7 @@ public:
 	virtual OSDL::Data* createCopy() const = 0;
 
 	/**
-	 * @brief Data destructor
+	 * @brief OSDL::Data destructor
 	 *
 	 * @details This destructor is mandatory since OSDL::Data is abstract, but does nothing since the class OSDL::Data does not contain any attribute.
 	 */
