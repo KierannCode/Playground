@@ -23,9 +23,7 @@
 							<tool id="org.eclipse.cdt.msvc.cl.exe.debug.28652153" name="C++ Compiler (cl)" superClass="org.eclipse.cdt.msvc.cl.exe.debug">
 								<option id="org.eclipse.cdt.msvc.cl.option.optimization.1541402656" name="Optimization" superClass="org.eclipse.cdt.msvc.cl.option.optimization" useByScannerDiscovery="false" value="org.eclipse.cdt.msvc.cl.option.optimization.default" valueType="enumerated"/>
 								<option id="org.eclipse.cdt.msvc.cl.option.debugFormat.1326860948" name="Debug Information Format" superClass="org.eclipse.cdt.msvc.cl.option.debugFormat" useByScannerDiscovery="false" value="org.eclipse.cdt.msvc.cl.option.debugFormat.complete" valueType="enumerated"/>
-								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="org.eclipse.cdt.msvc.cl.option.macros.1421332280" name="Defines (/D)" superClass="org.eclipse.cdt.msvc.cl.option.macros" useByScannerDiscovery="false" valueType="definedSymbols">
-									<listOptionValue builtIn="false" value="SDL_MAIN_HANDLED"/>
-								</option>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="true" id="org.eclipse.cdt.msvc.cl.option.macros.1421332280" name="Defines (/D)" superClass="org.eclipse.cdt.msvc.cl.option.macros" useByScannerDiscovery="false" valueType="definedSymbols"/>
 								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="org.eclipse.cdt.msvc.cl.option.includes.1449859419" name="Include Path (/I)" superClass="org.eclipse.cdt.msvc.cl.option.includes" useByScannerDiscovery="false" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\SDL2\include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include&quot;"/>
@@ -46,6 +44,11 @@
 									<listOptionValue builtIn="false" value="SDL2main.lib"/>
 									<listOptionValue builtIn="false" value="SDL2.lib"/>
 									<listOptionValue builtIn="false" value="cudart.lib"/>
+								</option>
+								<option id="org.eclipse.cdt.msvc.link.option.nologo.1590417630" name="Suppress Banner (/nologo)" superClass="org.eclipse.cdt.msvc.link.option.nologo" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="org.eclipse.cdt.msvc.link.option.others.1050325071" name="Other Options" superClass="org.eclipse.cdt.msvc.link.option.others" useByScannerDiscovery="false" valueType="stringList">
+									<listOptionValue builtIn="false" value="/subsystem:windows"/>
+									<listOptionValue builtIn="false" value="/entry:mainCRTStartup"/>
 								</option>
 								<inputType id="org.eclipse.cdt.msvc.link.inputType.2078375397" superClass="org.eclipse.cdt.msvc.link.inputType"/>
 							</tool>
@@ -75,7 +78,9 @@
 						</tool>
 					</fileInfo>
 					<fileInfo id="org.eclipse.cdt.msvc.exe.debug.1981440526.985525020" name="CUDAMandelbrot.cu" rcbsApplicability="override" resourcePath="src/Software/Software/04 GPUMandelbrot/CUDA/CUDAMandelbrot.cu" toolsToInvoke="org.eclipse.cdt.managedbuilder.ui.rcbs.1197716900">
-						<tool id="org.eclipse.cdt.msvc.cl.exe.debug.28652153.564054248" name="C++ Compiler (cl)" superClass="org.eclipse.cdt.msvc.cl.exe.debug.28652153"/>
+						<tool id="org.eclipse.cdt.msvc.cl.exe.debug.28652153.564054248" name="C++ Compiler (cl)" superClass="org.eclipse.cdt.msvc.cl.exe.debug.28652153">
+							<inputType id="org.eclipse.cdt.msvc.cl.inputType.1748805684" superClass="org.eclipse.cdt.msvc.cl.inputType"/>
+						</tool>
 						<tool customBuildStep="true" id="org.eclipse.cdt.managedbuilder.ui.rcbs.1197716900" name="Resource Custom Build Step">
 							<inputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.inputtype.671661637" name="Resource Custom Build Step Input Type">
 								<additionalInput kind="additionalinputdependency" paths=""/>

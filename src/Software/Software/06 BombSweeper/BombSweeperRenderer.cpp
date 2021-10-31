@@ -74,8 +74,8 @@ void BombSweeperRenderer::render(OSDL::Surface *surface) {
 		}
 	}
 	double *expected = new double[width * height];
-	double maxExpected = 0;
-	double bestExpected = 0;
+	double maxExpected = -10;
+	double bestExpected = maxExpected;
 	for (int j = 0; j < height; ++j) {
 		for (int i = 0; i < width; ++i) {
 			if (board[i + j * width] == HIDDEN) {

@@ -16,3 +16,11 @@ SDLException::SDLException() {
 	this->message += std::string(SDL_GetError());
 	SDL_ClearError();
 }
+
+SDLException::SDLException(const char *adviceMessage) {
+	this->message += "SDL error : ";
+	this->message += std::string(SDL_GetError());
+	this->message += ". ";
+	this->message += adviceMessage;
+	SDL_ClearError();
+}

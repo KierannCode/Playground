@@ -37,6 +37,7 @@ CoreThread::CoreThread(RenderingThread &renderingThread, const OSDL::Window &win
 	software->setWindowSize(window.getWidth(), window.getHeight());
 	this->framerate = framerate;
 
+
 	firstTick = 0;
 	frame = 0;
 
@@ -106,7 +107,7 @@ void CoreThread::loopCode() {
 				<< (int) (frame * 1000 / framerate - OSDL::Timer::getTicks()
 						+ firstTick) << "ms";
 		OSDL::Log::startInfo() << message.str().c_str() << OSDL::Log::end;
-		refreshTick = OSDL::Timer::getTicks() + refreshDelay;
+		refreshTick += refreshDelay;
 		referenceFrame = 0;
 
 		coreLags = 0;

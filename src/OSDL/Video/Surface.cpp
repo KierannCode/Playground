@@ -11,6 +11,7 @@
 
 #include "../Math/Math.hpp"
 
+#include "../Resilience/Exception/SDLException.hpp"
 #include "../Resilience/Log.hpp"
 
 #include <SDL_video.h>
@@ -27,6 +28,9 @@ OSDL::Surface::Surface(OSDL::Size width, OSDL::Size height,
 }
 OSDL::Surface::Surface(const std::string &imageFilename) {
 	SDL_Surface *image = SDL_LoadBMP(imageFilename.c_str());
+	if (image == nullptr) {
+		throw OSDL::SDLException("Verify that the requested ressource is accessible from the executable location");
+	}
 	surface = SDL_CreateRGBSurface(0, image->w, image->h, 32,
 			OSDL::Color::RMask, OSDL::Color::GMask, OSDL::Color::BMask,
 			OSDL::Color::AMask);
