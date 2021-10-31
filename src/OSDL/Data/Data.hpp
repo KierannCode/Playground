@@ -11,14 +11,14 @@
 namespace OSDL {
 
 /**
- * @brief Basic data interface
+ * @brief Basic data interface.
  *
  * @details This interface is used in some data structures to allow polymorphism without using templates.
  */
 class Data {
 public:
 	/**
-	 * @brief Creates a copy of the OSDL::Data object
+	 * @brief Creates a copy of the OSDL::Data object.
 	 *
 	 * @details This method returns a pointer to a new copy of the OSDL::Data object.\n
 	 * It is pure virtual and must be implemented in any derived class of OSDL::Data.\n
@@ -35,7 +35,7 @@ public:
 	virtual OSDL::Data* createCopy() const = 0;
 
 	/**
-	 * @brief OSDL::Data destructor
+	 * @brief OSDL::Data destructor.
 	 *
 	 * @details This destructor is mandatory since OSDL::Data is abstract, but does nothing since the class OSDL::Data does not contain any attribute.
 	 */

@@ -27,7 +27,7 @@ public:
 	/**
 	 * @brief Creates a new mutex, unlocked by default.
 	 *
-	 * @throw OSDL::SDLException if the mutex could not be created by SDL
+	 * @throw OSDL::SDLException if the mutex could not be created by SDL.
 	 */
 	Mutex();
 
@@ -41,7 +41,7 @@ public:
 	 *
 	 * @see OSDL::Mutex::unlock
 	 *
-	 * @throw OSDL::SDLException if the mutex could not be locked by SDL
+	 * @throw OSDL::SDLException if the mutex could not be locked by SDL.
 	 */
 	void lock();
 	/**
@@ -54,7 +54,7 @@ public:
 	 *
 	 * @see OSDL::Mutex::lock
 	 *
-	 * @throw OSDL::SDLException if the mutex could not be unlocked by SDL
+	 * @throw OSDL::SDLException if the mutex could not be unlocked by SDL.
 	 */
 	void unlock();
 

@@ -9,7 +9,7 @@
 
 #include "Data.hpp"
 
-#include "../Resilience/Exception/IllegalCallException.hpp"
+#include "../Resilience/Exception/IllegalCallException/IllegalCallException.hpp"
 
 OSDL::SinglyLinkedElement::SinglyLinkedElement(const OSDL::Data &data) {
 	this->data = data.createCopy();

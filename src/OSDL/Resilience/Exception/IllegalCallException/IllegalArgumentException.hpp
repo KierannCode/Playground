@@ -8,7 +8,7 @@
 #ifndef SRC_OSDL_RESILIENCE_EXCEPTION_ILLEGALCALLEXCEPTION_ILLEGALARGUMENTEXCEPTION_HPP_
 #define SRC_OSDL_RESILIENCE_EXCEPTION_ILLEGALCALLEXCEPTION_ILLEGALARGUMENTEXCEPTION_HPP_
 
-#include "../IllegalCallException.hpp"
+#include "IllegalCallException.hpp"
 
 namespace OSDL {
 class IllegalArgumentException: public IllegalCallException {

@@ -8,7 +8,7 @@
 #ifndef SRC_OSDL_RESILIENCE_EXCEPTION_SDLEXCEPTION_HPP_
 #define SRC_OSDL_RESILIENCE_EXCEPTION_SDLEXCEPTION_HPP_
 
-#include "../Exception.hpp"
+#include "Exception.hpp"
 
 namespace OSDL {
 class SDLException: public OSDL::Exception {

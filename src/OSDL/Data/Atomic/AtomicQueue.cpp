@@ -13,7 +13,7 @@
 #include "../../Thread/Mutex.hpp"
 
 #include "../../Resilience/Exception/IllegalCallException/IllegalArgumentException.hpp"
-#include "../../Resilience/Exception/IllegalCallException.hpp"
+#include "../../Resilience/Exception/IllegalCallException/IllegalCallException.hpp"
 
 #include <SDL_thread.h>
 

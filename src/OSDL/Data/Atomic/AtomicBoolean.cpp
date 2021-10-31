@@ -9,6 +9,11 @@
 
 #include "../../Thread/Mutex.hpp"
 
+OSDL::AtomicBoolean::AtomicBoolean() {
+	value = false;
+	mutex = new OSDL::Mutex;
+}
+
 OSDL::AtomicBoolean::AtomicBoolean(bool value) {
 	this->value = value;
 	mutex = new OSDL::Mutex;
