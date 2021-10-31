@@ -5,8 +5,8 @@
  *      Author: Kierann
  */
 
-#ifndef SRC_SOFTWARE_SOFTWARERENDERER_HPP_
-#define SRC_SOFTWARE_SOFTWARERENDERER_HPP_
+#ifndef PLAYGROUND_SOFTWARERENDERER
+#define PLAYGROUND_SOFTWARERENDERER
 
 namespace OSDL {
 class Surface;
@@ -21,4 +21,4 @@ private:
 	friend class Software;
 };
 
-#endif /* SRC_SOFTWARE_SOFTWARERENDERER_HPP_ */
+#endif /* PLAYGROUND_SOFTWARERENDERER */

@@ -5,8 +5,8 @@
  *      Author: Kierann
  */
 
-#ifndef SRC_OSDL_TIME_TIMER_HPP_
-#define SRC_OSDL_TIME_TIMER_HPP_
+#ifndef OSDL_TIMER
+#define OSDL_TIMER
 
 #include "../Types.hpp"
 
@@ -18,4 +18,4 @@ public:
 };
 }
 
-#endif /* SRC_OSDL_TIME_TIMER_HPP_ */
+#endif /* OSDL_TIMER */

@@ -5,8 +5,8 @@
  *      Author: Kierann
  */
 
-#ifndef SRC_OSDL_RESILIENCE_EXCEPTION_HPP_
-#define SRC_OSDL_RESILIENCE_EXCEPTION_HPP_
+#ifndef OSDL_EXCEPTION
+#define OSDL_EXCEPTION
 
 #include <exception>
 
@@ -23,4 +23,4 @@ protected:
 };
 }
 
-#endif /* SRC_OSDL_RESILIENCE_EXCEPTION_HPP_ */
+#endif /* OSDL_EXCEPTION */

@@ -5,8 +5,8 @@
  *      Author: Kierann
  */
 
-#ifndef SRC_OSDL_DATA_DATA_HPP_
-#define SRC_OSDL_DATA_DATA_HPP_
+#ifndef OSDL_DATA
+#define OSDL_DATA
 
 namespace OSDL {
 
@@ -18,7 +18,7 @@ namespace OSDL {
 class Data {
 public:
 	/**
-	 * @brief Creates a copy of the OSDL::Data object
+	 * @brief Creates a copy of the object
 	 *
 	 * @details This method returns a pointer to a new copy of the OSDL::Data object.\n
 	 * It is pure virtual and must be implemented in any derived class of OSDL::Data.\n
@@ -30,12 +30,12 @@ public:
 	 * }
 	 * \endcode
 	 *
-	 * @return A pointer to a copy of the OSDL::Data object.
+	 * @return A pointer to a copy of the object
 	 */
 	virtual OSDL::Data* createCopy() const = 0;
 
 	/**
-	 * @brief Data destructor
+	 * @brief Destructor
 	 *
 	 * @details This destructor is mandatory since OSDL::Data is abstract, but does nothing since the class OSDL::Data does not contain any attribute.
 	 */
@@ -43,4 +43,4 @@ public:
 };
 }
 
-#endif /* SRC_OSDL_DATA_DATA_HPP_ */
+#endif /* OSDL_DATA */

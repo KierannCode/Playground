@@ -5,8 +5,8 @@
  *      Author: Kierann
  */
 
-#ifndef SRC_VIDEO_RENDERINGTHREAD_HPP_
-#define SRC_VIDEO_RENDERINGTHREAD_HPP_
+#ifndef PLAYGROUND_RENDERINGTHREAD
+#define PLAYGROUND_RENDERINGTHREAD
 
 #include "../OSDL/Thread/ThreadLoop.hpp"
 
@@ -47,4 +47,4 @@ private:
 	void loopCode();
 };
 
-#endif /* SRC_VIDEO_RENDERINGTHREAD_HPP_ */
+#endif /* PLAYGROUND_RENDERINGTHREAD */

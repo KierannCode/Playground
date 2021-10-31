@@ -5,8 +5,8 @@
  *      Author: Kierann
  */
 
-#ifndef SRC_SOFTWARE_06_BOMBSWEEPER_BOMBSWEEPER_HPP_
-#define SRC_SOFTWARE_06_BOMBSWEEPER_BOMBSWEEPER_HPP_
+#ifndef PLAYGROUND_BOMBSWEEPER
+#define PLAYGROUND_BOMBSWEEPER
 
 #include "BombSweeperTypes.hpp"
 #include "../../Software.hpp"
@@ -70,4 +70,4 @@ private:
 	int **boxCount;
 };
 
-#endif /* SRC_SOFTWARE_06_BOMBSWEEPER_BOMBSWEEPER_HPP_ */
+#endif /* PLAYGROUND_BOMBSWEEPER */

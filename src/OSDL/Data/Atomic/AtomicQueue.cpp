@@ -7,15 +7,15 @@
 
 #include "AtomicQueue.hpp"
 
-#include "../SinglyLinkedElement.hpp"
 #include "../Data.hpp"
 
 #include "../../Thread/Mutex.hpp"
 
 #include "../../Resilience/Exception/IllegalCallException/IllegalArgumentException.hpp"
-#include "../../Resilience/Exception/IllegalCallException.hpp"
+#include "../../Resilience/Exception/IllegalCallException/IllegalCallException.hpp"
 
 #include <SDL_thread.h>
+#include "../SingleLinkElement.hpp"
 
 OSDL::AtomicQueue::AtomicQueue() {
 	firstElement = nullptr;
@@ -30,10 +30,10 @@ OSDL::AtomicQueue::AtomicQueue() {
 void OSDL::AtomicQueue::push(const OSDL::Data &data) {
 	mutex->lock();
 	if (lastElement != nullptr) {
-		lastElement->link(new SinglyLinkedElement(data));
+		lastElement->link(new SingleLinkElement(data));
 		lastElement = lastElement->getNextElement();
 	} else {
-		firstElement = new SinglyLinkedElement(data);
+		firstElement = new SingleLinkElement(data);
 		lastElement = firstElement;
 	}
 	mutex->unlock();

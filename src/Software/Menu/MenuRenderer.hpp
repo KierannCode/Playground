@@ -5,8 +5,8 @@
  *      Author: Kierann
  */
 
-#ifndef SRC_SOFTWARE_MENU_MENURENDERER_HPP_
-#define SRC_SOFTWARE_MENU_MENURENDERER_HPP_
+#ifndef PLAYGROUND_MENURENDERER
+#define PLAYGROUND_MENURENDERER
 
 #include "../SoftwareRenderer.hpp"
 
@@ -29,4 +29,4 @@ private:
 	friend class Menu;
 };
 
-#endif /* SRC_SOFTWARE_MENU_MENURENDERER_HPP_ */
+#endif /* PLAYGROUND_MENURENDERER */

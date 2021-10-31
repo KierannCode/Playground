@@ -19,26 +19,31 @@
 
 int main(int argc, char **argv) {
 	OSDL::Log::setLevel(OSDL::LogLevel::DEBUG);
+	try {
+		OSDL::System::initialize();
 
-	OSDL::System::initialize();
+		OSDL::Window window(768, 768, "Playground");
 
-	OSDL::Window window(768, 768, "Playground");
+		SDL_DisplayMode mode;
+		SDL_GetDesktopDisplayMode(0, &mode);
 
-	SDL_DisplayMode mode;
-	SDL_GetDesktopDisplayMode(0, &mode);
+		RenderingThread renderingThread(window);
+		CoreThread coreThread(renderingThread, window, mode.refresh_rate);
+		EventManager eventManager(renderingThread, coreThread);
 
-	RenderingThread renderingThread(window);
-	CoreThread coreThread(renderingThread, window, mode.refresh_rate);
-	EventManager eventManager(renderingThread, coreThread);
+		renderingThread.start();
+		coreThread.start();
+		eventManager.start();
 
-	renderingThread.start();
-	coreThread.start();
-	eventManager.start();
+		coreThread.stop();
+		renderingThread.stop();
 
-	coreThread.stop();
-	renderingThread.stop();
+		OSDL::System::quit();
 
-	OSDL::System::quit();
-
-	return 0;
+		return 0;
+	} catch (std::exception &e) {
+		OSDL::Log::startError() << "Uncaught exception in main thread : "
+				<< e.what() << std::endl << "The program will now terminate."
+				<< OSDL::Log::end;
+	}
 }

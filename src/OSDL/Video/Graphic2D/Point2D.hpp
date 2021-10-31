@@ -5,8 +5,8 @@
  *      Author: Kierann
  */
 
-#ifndef SRC_OSDL_VIDEO_GRAPHIC2D_POINT2D_HPP_
-#define SRC_OSDL_VIDEO_GRAPHIC2D_POINT2D_HPP_
+#ifndef OSDL_POINT2D
+#define OSDL_POINT2D
 
 namespace OSDL {
 class Point2D {
@@ -25,4 +25,4 @@ public:
 };
 }
 
-#endif /* SRC_OSDL_VIDEO_GRAPHIC2D_POINT2D_HPP_ */
+#endif /* OSDL_POINT2D */

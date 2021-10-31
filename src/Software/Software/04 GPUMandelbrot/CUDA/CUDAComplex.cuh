@@ -5,8 +5,8 @@
  *      Author: Kierann
  */
 
-#ifndef SRC_SOFTWARE_04_GPUMANDELBROT_CUDA_CUDACOMPLEX_CUH_
-#define SRC_SOFTWARE_04_GPUMANDELBROT_CUDA_CUDACOMPLEX_CUH_
+#ifndef PLAYGROUND_CUDACOMPLEX
+#define PLAYGROUND_CUDACOMPLEX
 
 #include <device_launch_parameters.h>
 
@@ -32,4 +32,4 @@ public:
 	__device__ double mod2() const;
 };
 
-#endif /* SRC_SOFTWARE_04_GPUMANDELBROT_CUDA_CUDACOMPLEX_CUH_ */
+#endif /* PLAYGROUND_CUDACOMPLEX */

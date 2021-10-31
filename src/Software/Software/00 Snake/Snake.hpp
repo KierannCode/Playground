@@ -5,11 +5,11 @@
  *      Author: Kierann
  */
 
-#ifndef SRC_SOFTWARE_00_SNAKE_SNAKE_HPP_
-#define SRC_SOFTWARE_00_SNAKE_SNAKE_HPP_
+#ifndef PLAYGROUND_SNAKE
+#define PLAYGROUND_SNAKE
 
 
 
 
 
-#endif /* SRC_SOFTWARE_00_SNAKE_SNAKE_HPP_ */
+#endif /* PLAYGROUND_SNAKE */

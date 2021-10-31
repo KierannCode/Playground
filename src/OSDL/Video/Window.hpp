@@ -5,8 +5,8 @@
  *      Author: Kierann
  */
 
-#ifndef SRC_OSDL_VIDEO_WINDOW_HPP_
-#define SRC_OSDL_VIDEO_WINDOW_HPP_
+#ifndef OSDL_WINDOW
+#define OSDL_WINDOW
 
 #include "../Types.hpp"
 
@@ -31,4 +31,4 @@ private:
 };
 }
 
-#endif /* SRC_OSDL_VIDEO_WINDOW_HPP_ */
+#endif /* OSDL_WINDOW */

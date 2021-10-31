@@ -5,8 +5,8 @@
  *      Author: Kierann
  */
 
-#ifndef SRC_OSDL_MATH_MATH_HPP_
-#define SRC_OSDL_MATH_MATH_HPP_
+#ifndef OSDL_MATH
+#define OSDL_MATH
 
 namespace OSDL {
 class Math {
@@ -19,4 +19,4 @@ public:
 };
 }
 
-#endif /* SRC_OSDL_MATH_MATH_HPP_ */
+#endif /* OSDL_MATH */

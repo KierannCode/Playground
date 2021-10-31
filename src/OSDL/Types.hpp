@@ -5,8 +5,8 @@
  *      Author: Kierann
  */
 
-#ifndef SRC_OSDL_TYPES_HPP_
-#define SRC_OSDL_TYPES_HPP_
+#ifndef OSDL_TYPES
+#define OSDL_TYPES
 
 #include <cstdint>
 

@@ -5,8 +5,8 @@
  *      Author: Kierann
  */
 
-#ifndef SRC_SOFTWARE_03_GAMEOFLIFE_GAMEOFLIFE_HPP_
-#define SRC_SOFTWARE_03_GAMEOFLIFE_GAMEOFLIFE_HPP_
+#ifndef PLAYGROUND_GAMEOFLIFE
+#define PLAYGROUND_GAMEOFLIFE
 
 #include "../../Software.hpp"
 
@@ -35,4 +35,4 @@ public:
 	~GameOfLife();
 };
 
-#endif /* SRC_SOFTWARE_03_GAMEOFLIFE_GAMEOFLIFE_HPP_ */
+#endif /* PLAYGROUND_GAMEOFLIFE */

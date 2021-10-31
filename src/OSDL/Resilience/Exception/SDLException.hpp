@@ -5,16 +5,17 @@
  *      Author: Kierann
  */
 
-#ifndef SRC_OSDL_RESILIENCE_EXCEPTION_SDLEXCEPTION_HPP_
-#define SRC_OSDL_RESILIENCE_EXCEPTION_SDLEXCEPTION_HPP_
+#ifndef OSDL_SDLEXCEPTION
+#define OSDL_SDLEXCEPTION
 
-#include "../Exception.hpp"
+#include "Exception.hpp"
 
 namespace OSDL {
 class SDLException: public OSDL::Exception {
 public:
 	SDLException();
+	SDLException(const char *adviceMessage);
 };
 }
 
-#endif /* SRC_OSDL_RESILIENCE_EXCEPTION_SDLEXCEPTION_HPP_ */
+#endif /* OSDL_SDLEXCEPTION */

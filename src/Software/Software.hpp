@@ -5,8 +5,8 @@
  *      Author: Kierann
  */
 
-#ifndef SRC_SOFTWARE_SOFTWARE_HPP_
-#define SRC_SOFTWARE_SOFTWARE_HPP_
+#ifndef PLAYGROUND_SOFTWARE
+#define PLAYGROUND_SOFTWARE
 
 #include "../OSDL/Event/EventTypes.hpp"
 
@@ -53,4 +53,4 @@ private:
 	virtual void onKeyboardKeyReleased(OSDL::KeyboardKey key);
 };
 
-#endif /* SRC_SOFTWARE_SOFTWARE_HPP_ */
+#endif /* PLAYGROUND_SOFTWARE */

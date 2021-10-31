@@ -5,8 +5,8 @@
  *      Author: Kierann
  */
 
-#ifndef SRC_OSDL_RESILIENCE_LOG_HPP_
-#define SRC_OSDL_RESILIENCE_LOG_HPP_
+#ifndef OSDL_LOG
+#define OSDL_LOG
 
 #include <sstream>
 
@@ -46,4 +46,4 @@ private:
 };
 }
 
-#endif /* SRC_OSDL_RESILIENCE_LOG_HPP_ */
+#endif /* OSDL_LOG */

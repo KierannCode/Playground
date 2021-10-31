@@ -5,9 +5,10 @@
  *      Author: Kierann
  */
 
-#ifndef SRC_OSDL_EVENT_EVENTTYPES_HPP_
-#define SRC_OSDL_EVENT_EVENTTYPES_HPP_
+#ifndef OSDL_EVENTTYPES
+#define OSDL_EVENTTYPES
 
+///TODO those headers includes other headers which is not consistent with this whole project.
 #include <SDL_mouse.h>
 #include <SDL_scancode.h>
 
@@ -300,4 +301,4 @@ enum class KeyboardKey {
 };
 }
 
-#endif /* SRC_OSDL_EVENT_EVENTTYPES_HPP_ */
+#endif /* OSDL_EVENTTYPES */

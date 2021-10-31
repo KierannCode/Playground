@@ -12,6 +12,7 @@
 #include "../Thread/Mutex.hpp"
 
 #include <SDL_thread.h>
+#include <SDL_messagebox.h>
 
 #include <iostream>
 #include <ctime>
@@ -37,6 +38,7 @@ void OSDL::Log::error(const char *message) {
 		outputThreadID();
 		std::cout << "\033[1;31m : " << message << "\033[0m" << std::endl;
 	}
+	SDL_ShowSimpleMessageBox(SDL_MESSAGEBOX_ERROR, "Error", message, nullptr);
 	mutex.unlock();
 }
 void OSDL::Log::warning(const char *message) {
