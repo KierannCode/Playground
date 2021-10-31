@@ -17,7 +17,7 @@ namespace OSDL {
 /**
  * @brief Implementation of a mutex using SDL primitives.
  *
- * @details This implementation is the Object Oriented version of SDL_mutex.\n
+ * @details This implementation is the Object Oriented version of SDL_mutex structure.\n
  * A mutex shall be used to prevent concurrent access to shared ressources between threads.\n
  * A mutex must be locked right before using the ressources, and unlocked right after.\n
  * This implementation supports recursive locking.
@@ -25,14 +25,16 @@ namespace OSDL {
 class Mutex {
 public:
 	/**
-	 * @brief Creates a new mutex, unlocked by default.
+	 * @brief Default constructor
 	 *
-	 * @throw OSDL::SDLException if the mutex could not be created by SDL.
+	 * @details Initilializes the mutex, unlocked by default.
+	 *
+	 * @throw OSDL::SDLException if the mutex could not be created by SDL
 	 */
 	Mutex();
 
 	/**
-	 * @brief Locks the mutex.
+	 * @brief Locks the mutex
 	 *
 	 * @details When a mutex is locked in a thread, this method will pause any other thread
 	 * trying to lock it until it is unlocked in the thread where it has been locked.\n
@@ -41,11 +43,11 @@ public:
 	 *
 	 * @see OSDL::Mutex::unlock
 	 *
-	 * @throw OSDL::SDLException if the mutex could not be locked by SDL.
+	 * @throw OSDL::SDLException if the mutex could not be locked by SDL
 	 */
 	void lock();
 	/**
-	 * @brief Unlocks the mutex.
+	 * @brief Unlocks the mutex
 	 *
 	 * @details This method must be called when the mutex is locked in order to unlock it.\n
 	 * If the mutex was locked several times in a row in the same thread, it must
@@ -54,12 +56,12 @@ public:
 	 *
 	 * @see OSDL::Mutex::lock
 	 *
-	 * @throw OSDL::SDLException if the mutex could not be unlocked by SDL.
+	 * @throw OSDL::SDLException if the mutex could not be unlocked by SDL
 	 */
 	void unlock();
 
 	/**
-	 * @brief Destroys the mutex.
+	 * @brief Destructor
 	 *
 	 * @details A mutex must always be destroyed in its unlocked state.\n
 	 * Destroying a locked mutex results in undefined behavior.
