@@ -63,7 +63,6 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_event_manager-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">EventManager Class Reference</div>  </div>
@@ -74,7 +73,7 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6af9714eaf41bf7d40324e285fccc73a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_event_manager.html#a6af9714eaf41bf7d40324e285fccc73a">EventManager</a> (<a class="el" href="class_rendering_thread.html">RenderingThread</a> &amp;<a class="el" href="class_event_manager.html#a7d0e09495529776676c29aa42a08317c">renderingThread</a>, <a class="el" href="class_core_thread.html">CoreThread</a> &amp;coreThread)</td></tr>
+<tr class="memitem:a6af9714eaf41bf7d40324e285fccc73a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_event_manager.html#a6af9714eaf41bf7d40324e285fccc73a">EventManager</a> (<a class="el" href="class_rendering_thread.html">RenderingThread</a> &amp;renderingThread, <a class="el" href="class_core_thread.html">CoreThread</a> &amp;coreThread)</td></tr>
 <tr class="separator:a6af9714eaf41bf7d40324e285fccc73a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa44bc7b5dd6ed1d2966c0df3f14aabc6"><td class="memItemLeft" align="right" valign="top">OSDL::AtomicQueue *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_event_manager.html#aa44bc7b5dd6ed1d2966c0df3f14aabc6">getEventQueue</a> () const</td></tr>
 <tr class="separator:aa44bc7b5dd6ed1d2966c0df3f14aabc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -82,17 +81,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1b996feba32e78fd8b5d171437f88c60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e43e8b165b54f75e9c005cf5b04ade7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_event_manager.html#a2e43e8b165b54f75e9c005cf5b04ade7">~EventManager</a> ()</td></tr>
 <tr class="separator:a2e43e8b165b54f75e9c005cf5b04ade7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a7d0e09495529776676c29aa42a08317c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_rendering_thread.html">RenderingThread</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_event_manager.html#a7d0e09495529776676c29aa42a08317c">renderingThread</a></td></tr>
-<tr class="separator:a7d0e09495529776676c29aa42a08317c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0ffd7e8116b37004a93a79036dfbf85"><td class="memItemLeft" align="right" valign="top">OSDL::Event *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_event_manager.html#aa0ffd7e8116b37004a93a79036dfbf85">event</a></td></tr>
-<tr class="separator:aa0ffd7e8116b37004a93a79036dfbf85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add27bfcce23bd95db81dbdc47f79db08"><td class="memItemLeft" align="right" valign="top">OSDL::AtomicQueue *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_event_manager.html#add27bfcce23bd95db81dbdc47f79db08">eventQueue</a></td></tr>
-<tr class="separator:add27bfcce23bd95db81dbdc47f79db08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29af4019ea215759e7f1b1cce29e8332"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_event_manager.html#a29af4019ea215759e7f1b1cce29e8332">running</a></td></tr>
-<tr class="separator:a29af4019ea215759e7f1b1cce29e8332"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -175,103 +163,6 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="aa0ffd7e8116b37004a93a79036dfbf85"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa0ffd7e8116b37004a93a79036dfbf85">&#9670;&nbsp;</a></span>event</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">OSDL::Event* EventManager::event</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_event_manager_8hpp_source.html#l00031">31</a> of file <a class="el" href="_event_manager_8hpp_source.html">EventManager.hpp</a>.</p>
-
-</div>
-</div>
-<a id="add27bfcce23bd95db81dbdc47f79db08"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add27bfcce23bd95db81dbdc47f79db08">&#9670;&nbsp;</a></span>eventQueue</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">OSDL::AtomicQueue* EventManager::eventQueue</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_event_manager_8hpp_source.html#l00032">32</a> of file <a class="el" href="_event_manager_8hpp_source.html">EventManager.hpp</a>.</p>
-
-</div>
-</div>
-<a id="a7d0e09495529776676c29aa42a08317c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d0e09495529776676c29aa42a08317c">&#9670;&nbsp;</a></span>renderingThread</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_rendering_thread.html">RenderingThread</a>* EventManager::renderingThread</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_event_manager_8hpp_source.html#l00029">29</a> of file <a class="el" href="_event_manager_8hpp_source.html">EventManager.hpp</a>.</p>
-
-</div>
-</div>
-<a id="a29af4019ea215759e7f1b1cce29e8332"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a29af4019ea215759e7f1b1cce29e8332">&#9670;&nbsp;</a></span>running</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool EventManager::running</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_event_manager_8hpp_source.html#l00034">34</a> of file <a class="el" href="_event_manager_8hpp_source.html">EventManager.hpp</a>.</p>
 
 </div>
 </div>

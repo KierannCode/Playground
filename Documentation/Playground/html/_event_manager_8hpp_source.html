@@ -76,8 +76,8 @@ $(function() {
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *      Author: Kierann</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef SRC_EVENT_EVENTMANAGER_HPP_</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define SRC_EVENT_EVENTMANAGER_HPP_</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef PLAYGROUND_EVENTMANAGER</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define PLAYGROUND_EVENTMANAGER</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">class </span><a class="code" href="class_rendering_thread.html">RenderingThread</a>;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">class </span><a class="code" href="class_core_thread.html">CoreThread</a>;</div>
@@ -89,7 +89,7 @@ $(function() {
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
 <div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_event_manager.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_event_manager.html">EventManager</a> {</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="class_event_manager.html#a6af9714eaf41bf7d40324e285fccc73a">EventManager</a>(<a class="code" href="class_rendering_thread.html">RenderingThread</a> &amp;<a class="code" href="class_event_manager.html#a7d0e09495529776676c29aa42a08317c">renderingThread</a>, <a class="code" href="class_core_thread.html">CoreThread</a> &amp;coreThread);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="class_event_manager.html#a6af9714eaf41bf7d40324e285fccc73a">EventManager</a>(<a class="code" href="class_rendering_thread.html">RenderingThread</a> &amp;renderingThread, <a class="code" href="class_core_thread.html">CoreThread</a> &amp;coreThread);</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    OSDL::AtomicQueue* <a class="code" href="class_event_manager.html#aa44bc7b5dd6ed1d2966c0df3f14aabc6">getEventQueue</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
@@ -97,28 +97,24 @@ $(function() {
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="class_event_manager.html#a2e43e8b165b54f75e9c005cf5b04ade7">~EventManager</a>();</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_event_manager.html#a7d0e09495529776676c29aa42a08317c">   29</a></span>&#160;    <a class="code" href="class_rendering_thread.html">RenderingThread</a> *<a class="code" href="class_event_manager.html#a7d0e09495529776676c29aa42a08317c">renderingThread</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="class_rendering_thread.html">RenderingThread</a> *renderingThread;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_event_manager.html#aa0ffd7e8116b37004a93a79036dfbf85">   31</a></span>&#160;    OSDL::Event *<a class="code" href="class_event_manager.html#aa0ffd7e8116b37004a93a79036dfbf85">event</a>;</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_event_manager.html#add27bfcce23bd95db81dbdc47f79db08">   32</a></span>&#160;    OSDL::AtomicQueue *<a class="code" href="class_event_manager.html#add27bfcce23bd95db81dbdc47f79db08">eventQueue</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    OSDL::Event *event;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    OSDL::AtomicQueue *eventQueue;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_event_manager.html#a29af4019ea215759e7f1b1cce29e8332">   34</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_event_manager.html#a29af4019ea215759e7f1b1cce29e8332">running</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">bool</span> running;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* SRC_EVENT_EVENTMANAGER_HPP_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PLAYGROUND_EVENTMANAGER */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclass_event_manager_html"><div class="ttname"><a href="class_event_manager.html">EventManager</a></div><div class="ttdef"><b>Definition:</b> <a href="_event_manager_8hpp_source.html#l00019">EventManager.hpp:19</a></div></div>
 <div class="ttc" id="aclass_event_manager_html_a2e43e8b165b54f75e9c005cf5b04ade7"><div class="ttname"><a href="class_event_manager.html#a2e43e8b165b54f75e9c005cf5b04ade7">EventManager::~EventManager</a></div><div class="ttdeci">~EventManager()</div></div>
 <div class="ttc" id="aclass_core_thread_html"><div class="ttname"><a href="class_core_thread.html">CoreThread</a></div><div class="ttdef"><b>Definition:</b> <a href="_core_thread_8hpp_source.html#l00023">CoreThread.hpp:23</a></div></div>
 <div class="ttc" id="aclass_event_manager_html_a1b996feba32e78fd8b5d171437f88c60"><div class="ttname"><a href="class_event_manager.html#a1b996feba32e78fd8b5d171437f88c60">EventManager::start</a></div><div class="ttdeci">void start()</div></div>
 <div class="ttc" id="aclass_event_manager_html_a6af9714eaf41bf7d40324e285fccc73a"><div class="ttname"><a href="class_event_manager.html#a6af9714eaf41bf7d40324e285fccc73a">EventManager::EventManager</a></div><div class="ttdeci">EventManager(RenderingThread &amp;renderingThread, CoreThread &amp;coreThread)</div></div>
-<div class="ttc" id="aclass_event_manager_html_a29af4019ea215759e7f1b1cce29e8332"><div class="ttname"><a href="class_event_manager.html#a29af4019ea215759e7f1b1cce29e8332">EventManager::running</a></div><div class="ttdeci">bool running</div><div class="ttdef"><b>Definition:</b> <a href="_event_manager_8hpp_source.html#l00034">EventManager.hpp:34</a></div></div>
 <div class="ttc" id="aclass_rendering_thread_html"><div class="ttname"><a href="class_rendering_thread.html">RenderingThread</a></div><div class="ttdef"><b>Definition:</b> <a href="_rendering_thread_8hpp_source.html#l00023">RenderingThread.hpp:23</a></div></div>
-<div class="ttc" id="aclass_event_manager_html_a7d0e09495529776676c29aa42a08317c"><div class="ttname"><a href="class_event_manager.html#a7d0e09495529776676c29aa42a08317c">EventManager::renderingThread</a></div><div class="ttdeci">RenderingThread * renderingThread</div><div class="ttdef"><b>Definition:</b> <a href="_event_manager_8hpp_source.html#l00029">EventManager.hpp:29</a></div></div>
-<div class="ttc" id="aclass_event_manager_html_add27bfcce23bd95db81dbdc47f79db08"><div class="ttname"><a href="class_event_manager.html#add27bfcce23bd95db81dbdc47f79db08">EventManager::eventQueue</a></div><div class="ttdeci">OSDL::AtomicQueue * eventQueue</div><div class="ttdef"><b>Definition:</b> <a href="_event_manager_8hpp_source.html#l00032">EventManager.hpp:32</a></div></div>
 <div class="ttc" id="aclass_event_manager_html_aa44bc7b5dd6ed1d2966c0df3f14aabc6"><div class="ttname"><a href="class_event_manager.html#aa44bc7b5dd6ed1d2966c0df3f14aabc6">EventManager::getEventQueue</a></div><div class="ttdeci">OSDL::AtomicQueue * getEventQueue() const</div></div>
 <div class="ttc" id="anamespace_o_s_d_l_html"><div class="ttname"><a href="namespace_o_s_d_l.html">OSDL</a></div><div class="ttdef"><b>Definition:</b> <a href="_core_thread_8hpp_source.html#l00018">CoreThread.hpp:18</a></div></div>
-<div class="ttc" id="aclass_event_manager_html_aa0ffd7e8116b37004a93a79036dfbf85"><div class="ttname"><a href="class_event_manager.html#aa0ffd7e8116b37004a93a79036dfbf85">EventManager::event</a></div><div class="ttdeci">OSDL::Event * event</div><div class="ttdef"><b>Definition:</b> <a href="_event_manager_8hpp_source.html#l00031">EventManager.hpp:31</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

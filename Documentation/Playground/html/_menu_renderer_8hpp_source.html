@@ -76,8 +76,8 @@ $(function() {
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *      Author: Kierann</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef SRC_SOFTWARE_MENU_MENURENDERER_HPP_</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define SRC_SOFTWARE_MENU_MENURENDERER_HPP_</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef PLAYGROUND_MENURENDERER</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define PLAYGROUND_MENURENDERER</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;../SoftwareRenderer.hpp&quot;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
@@ -93,22 +93,20 @@ $(function() {
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="class_menu_renderer.html#a0250ba1202f9faff24d34cdeb3df8a4d">~MenuRenderer</a>();</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_menu_renderer.html#a8beedcdf2f933d7d9c0c4956a6b8d5c3">   25</a></span>&#160;    OSDL::Surface **<a class="code" href="class_menu_renderer.html#a8beedcdf2f933d7d9c0c4956a6b8d5c3">softwareIcon</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    OSDL::Surface **softwareIcon;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_menu_renderer.html#ac7ac4b4468064363994e5bc344378ce2">   27</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_menu_renderer.html#ac7ac4b4468064363994e5bc344378ce2">selectedSoftware</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">int</span> selectedSoftware;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
 <div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_menu_renderer.html#a834cec0fab7efabab3cd53540e4d466d">   29</a></span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_menu.html">Menu</a>;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;};</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* SRC_SOFTWARE_MENU_MENURENDERER_HPP_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PLAYGROUND_MENURENDERER */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclass_menu_renderer_html_accc8abc2b403418f03d51859cbc0c509"><div class="ttname"><a href="class_menu_renderer.html#accc8abc2b403418f03d51859cbc0c509">MenuRenderer::render</a></div><div class="ttdeci">void render(OSDL::Surface *surface)</div></div>
 <div class="ttc" id="aclass_software_renderer_html"><div class="ttname"><a href="class_software_renderer.html">SoftwareRenderer</a></div><div class="ttdef"><b>Definition:</b> <a href="_software_renderer_8hpp_source.html#l00015">SoftwareRenderer.hpp:15</a></div></div>
 <div class="ttc" id="aclass_menu_renderer_html_a0250ba1202f9faff24d34cdeb3df8a4d"><div class="ttname"><a href="class_menu_renderer.html#a0250ba1202f9faff24d34cdeb3df8a4d">MenuRenderer::~MenuRenderer</a></div><div class="ttdeci">~MenuRenderer()</div></div>
-<div class="ttc" id="aclass_menu_renderer_html_ac7ac4b4468064363994e5bc344378ce2"><div class="ttname"><a href="class_menu_renderer.html#ac7ac4b4468064363994e5bc344378ce2">MenuRenderer::selectedSoftware</a></div><div class="ttdeci">int selectedSoftware</div><div class="ttdef"><b>Definition:</b> <a href="_menu_renderer_8hpp_source.html#l00027">MenuRenderer.hpp:27</a></div></div>
 <div class="ttc" id="aclass_menu_renderer_html"><div class="ttname"><a href="class_menu_renderer.html">MenuRenderer</a></div><div class="ttdef"><b>Definition:</b> <a href="_menu_renderer_8hpp_source.html#l00017">MenuRenderer.hpp:17</a></div></div>
 <div class="ttc" id="aclass_menu_html"><div class="ttname"><a href="class_menu.html">Menu</a></div><div class="ttdef"><b>Definition:</b> <a href="_menu_8hpp_source.html#l00015">Menu.hpp:15</a></div></div>
-<div class="ttc" id="aclass_menu_renderer_html_a8beedcdf2f933d7d9c0c4956a6b8d5c3"><div class="ttname"><a href="class_menu_renderer.html#a8beedcdf2f933d7d9c0c4956a6b8d5c3">MenuRenderer::softwareIcon</a></div><div class="ttdeci">OSDL::Surface ** softwareIcon</div><div class="ttdef"><b>Definition:</b> <a href="_menu_renderer_8hpp_source.html#l00025">MenuRenderer.hpp:25</a></div></div>
 <div class="ttc" id="aclass_menu_renderer_html_a28759b378a36cf3eed206ee7e31e1cf0"><div class="ttname"><a href="class_menu_renderer.html#a28759b378a36cf3eed206ee7e31e1cf0">MenuRenderer::MenuRenderer</a></div><div class="ttdeci">MenuRenderer()</div></div>
 <div class="ttc" id="anamespace_o_s_d_l_html"><div class="ttname"><a href="namespace_o_s_d_l.html">OSDL</a></div><div class="ttdef"><b>Definition:</b> <a href="_core_thread_8hpp_source.html#l00018">CoreThread.hpp:18</a></div></div>
 <!-- start footer part -->

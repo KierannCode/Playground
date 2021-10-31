@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['corelags_123',['coreLags',['../class_core_thread.html#a75ff2234ac908b0aea9ae49ce81e9e4e',1,'CoreThread']]]
+  ['exitvalue_86',['exitValue',['../class_software.html#ace5e38e6b2396c10c71236d5cb709ad6',1,'Software']]]
 ];

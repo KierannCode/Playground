@@ -1,9 +1,14 @@
 var searchData=
 [
-  ['wait_423',['wait',['../class_o_s_d_l_1_1_event.html#a73fcd6754777eec36b8aa5072ff0c4bb',1,'OSDL::Event::wait()'],['../class_o_s_d_l_1_1_semaphore.html#ab34ea933d9df16e32b89135fa6631255',1,'OSDL::Semaphore::wait()']]],
-  ['warning_424',['warning',['../class_o_s_d_l_1_1_log.html#a8d1e8b0bbc4fac02cbe2edd47f06720a',1,'OSDL::Log']]],
-  ['what_425',['what',['../class_o_s_d_l_1_1_exception.html#ae171cb6f3388b81347e11757513bfd99',1,'OSDL::Exception']]],
-  ['window_426',['Window',['../class_o_s_d_l_1_1_window.html#a2d02e0e8a4239f1fc7da9da3e86df578',1,'OSDL::Window']]],
-  ['windowcloseddata_427',['WindowClosedData',['../class_o_s_d_l_1_1_window_closed_data.html#aa243ad227ea437f8bdba1bb7bd0e8537',1,'OSDL::WindowClosedData']]],
-  ['windowresizeddata_428',['WindowResizedData',['../class_o_s_d_l_1_1_window_resized_data.html#a987336edfe150bc05b5c8d8b01d217a4',1,'OSDL::WindowResizedData::WindowResizedData()=delete'],['../class_o_s_d_l_1_1_window_resized_data.html#a65a0e1aae4778c931e6fc7e2eaadd646',1,'OSDL::WindowResizedData::WindowResizedData(OSDL::Size width, OSDL::Size height)']]]
+  ['_7eatomicboolean_399',['~AtomicBoolean',['../class_o_s_d_l_1_1_atomic_boolean.html#a17c136f045fc254eb6c5a6c5bc966906',1,'OSDL::AtomicBoolean']]],
+  ['_7eatomicqueue_400',['~AtomicQueue',['../class_o_s_d_l_1_1_atomic_queue.html#ac092c072ad06adc5ac64b2722dcac998',1,'OSDL::AtomicQueue']]],
+  ['_7edata_401',['~Data',['../class_o_s_d_l_1_1_data.html#a7b967b40ea08470922875f30cfbaa234',1,'OSDL::Data']]],
+  ['_7eevent_402',['~Event',['../class_o_s_d_l_1_1_event.html#a898f5259624aa4395ed46546386fb83c',1,'OSDL::Event']]],
+  ['_7eeventdata_403',['~EventData',['../class_o_s_d_l_1_1_event_data.html#aae8ade670ff45c4b60fd68fc0eb2c26b',1,'OSDL::EventData']]],
+  ['_7emutex_404',['~Mutex',['../class_o_s_d_l_1_1_mutex.html#a54bd659cfdbc3329ca05c3f95d777da5',1,'OSDL::Mutex']]],
+  ['_7esemaphore_405',['~Semaphore',['../class_o_s_d_l_1_1_semaphore.html#a32e074395114603a704eed3d1d5c19a5',1,'OSDL::Semaphore']]],
+  ['_7esinglelinkelement_406',['~SingleLinkElement',['../class_o_s_d_l_1_1_single_link_element.html#a6c5273a51a89fb7eafcbed7d90de7c80',1,'OSDL::SingleLinkElement']]],
+  ['_7esurface_407',['~Surface',['../class_o_s_d_l_1_1_surface.html#a7553a8afb4edabdf2d50197f358e589f',1,'OSDL::Surface']]],
+  ['_7ethreadloop_408',['~ThreadLoop',['../class_o_s_d_l_1_1_thread_loop.html#a2908c1650d60eb314ca23439d3fe96c5',1,'OSDL::ThreadLoop']]],
+  ['_7ewindow_409',['~Window',['../class_o_s_d_l_1_1_window.html#a233637d70d119a0eeb4cc36176831f46',1,'OSDL::Window']]]
 ];

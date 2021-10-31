@@ -76,37 +76,35 @@ $(function() {
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *      Author: Kierann</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef SRC_OSDL_VIDEO_GRAPHIC2D_POINT2D_HPP_</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define SRC_OSDL_VIDEO_GRAPHIC2D_POINT2D_HPP_</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef OSDL_POINT2D</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define OSDL_POINT2D</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_o_s_d_l.html">OSDL</a> {</div>
 <div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_o_s_d_l_1_1_point2_d.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_o_s_d_l_1_1_point2_d.html">Point2D</a> {</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_o_s_d_l_1_1_point2_d.html#a71fbaabf0522beb7703d6ca38379bf02">   14</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_o_s_d_l_1_1_point2_d.html#a71fbaabf0522beb7703d6ca38379bf02">x</a>;</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_o_s_d_l_1_1_point2_d.html#ae7480dee3f59abc3b956e8b280f4f1f4">   15</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_o_s_d_l_1_1_point2_d.html#ae7480dee3f59abc3b956e8b280f4f1f4">y</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">double</span> x;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">double</span> y;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_o_s_d_l_1_1_point2_d.html#a6c5b3a586b595d33f49c50a1179fc550">Point2D</a>();</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="class_o_s_d_l_1_1_point2_d.html#a6c5b3a586b595d33f49c50a1179fc550">Point2D</a>(<span class="keywordtype">double</span> <a class="code" href="class_o_s_d_l_1_1_point2_d.html#a71fbaabf0522beb7703d6ca38379bf02">x</a>, <span class="keywordtype">double</span> <a class="code" href="class_o_s_d_l_1_1_point2_d.html#ae7480dee3f59abc3b956e8b280f4f1f4">y</a>);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="class_o_s_d_l_1_1_point2_d.html#a6c5b3a586b595d33f49c50a1179fc550">Point2D</a>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y);</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_o_s_d_l_1_1_point2_d.html#a8157ea3315d637a5b6be87fbc6d6dd26">getX</a>();</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_o_s_d_l_1_1_point2_d.html#a8a61fd2630553787b6647c4bdd0375a7">getY</a>();</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_o_s_d_l_1_1_point2_d.html#af932763922119753350a27e59c34be63">setX</a>(<span class="keywordtype">double</span> <a class="code" href="class_o_s_d_l_1_1_point2_d.html#a71fbaabf0522beb7703d6ca38379bf02">x</a>);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_o_s_d_l_1_1_point2_d.html#a488cd656155bdab55020935d44d073aa">setY</a>(<span class="keywordtype">double</span> <a class="code" href="class_o_s_d_l_1_1_point2_d.html#ae7480dee3f59abc3b956e8b280f4f1f4">y</a>);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_o_s_d_l_1_1_point2_d.html#af932763922119753350a27e59c34be63">setX</a>(<span class="keywordtype">double</span> x);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_o_s_d_l_1_1_point2_d.html#a488cd656155bdab55020935d44d073aa">setY</a>(<span class="keywordtype">double</span> y);</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;};</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* SRC_OSDL_VIDEO_GRAPHIC2D_POINT2D_HPP_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* OSDL_POINT2D */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclass_o_s_d_l_1_1_point2_d_html_a8157ea3315d637a5b6be87fbc6d6dd26"><div class="ttname"><a href="class_o_s_d_l_1_1_point2_d.html#a8157ea3315d637a5b6be87fbc6d6dd26">OSDL::Point2D::getX</a></div><div class="ttdeci">double getX()</div></div>
 <div class="ttc" id="aclass_o_s_d_l_1_1_point2_d_html_af932763922119753350a27e59c34be63"><div class="ttname"><a href="class_o_s_d_l_1_1_point2_d.html#af932763922119753350a27e59c34be63">OSDL::Point2D::setX</a></div><div class="ttdeci">void setX(double x)</div></div>
 <div class="ttc" id="aclass_o_s_d_l_1_1_point2_d_html_a6c5b3a586b595d33f49c50a1179fc550"><div class="ttname"><a href="class_o_s_d_l_1_1_point2_d.html#a6c5b3a586b595d33f49c50a1179fc550">OSDL::Point2D::Point2D</a></div><div class="ttdeci">Point2D()</div></div>
-<div class="ttc" id="aclass_o_s_d_l_1_1_point2_d_html_ae7480dee3f59abc3b956e8b280f4f1f4"><div class="ttname"><a href="class_o_s_d_l_1_1_point2_d.html#ae7480dee3f59abc3b956e8b280f4f1f4">OSDL::Point2D::y</a></div><div class="ttdeci">double y</div><div class="ttdef"><b>Definition:</b> <a href="_point2_d_8hpp_source.html#l00015">Point2D.hpp:15</a></div></div>
-<div class="ttc" id="aclass_o_s_d_l_1_1_point2_d_html_a71fbaabf0522beb7703d6ca38379bf02"><div class="ttname"><a href="class_o_s_d_l_1_1_point2_d.html#a71fbaabf0522beb7703d6ca38379bf02">OSDL::Point2D::x</a></div><div class="ttdeci">double x</div><div class="ttdef"><b>Definition:</b> <a href="_point2_d_8hpp_source.html#l00014">Point2D.hpp:14</a></div></div>
 <div class="ttc" id="aclass_o_s_d_l_1_1_point2_d_html"><div class="ttname"><a href="class_o_s_d_l_1_1_point2_d.html">OSDL::Point2D</a></div><div class="ttdef"><b>Definition:</b> <a href="_point2_d_8hpp_source.html#l00012">Point2D.hpp:12</a></div></div>
 <div class="ttc" id="aclass_o_s_d_l_1_1_point2_d_html_a8a61fd2630553787b6647c4bdd0375a7"><div class="ttname"><a href="class_o_s_d_l_1_1_point2_d.html#a8a61fd2630553787b6647c4bdd0375a7">OSDL::Point2D::getY</a></div><div class="ttdeci">double getY()</div></div>
 <div class="ttc" id="aclass_o_s_d_l_1_1_point2_d_html_a488cd656155bdab55020935d44d073aa"><div class="ttname"><a href="class_o_s_d_l_1_1_point2_d.html#a488cd656155bdab55020935d44d073aa">OSDL::Point2D::setY</a></div><div class="ttdeci">void setY(double y)</div></div>
-<div class="ttc" id="anamespace_o_s_d_l_html"><div class="ttname"><a href="namespace_o_s_d_l.html">OSDL</a></div><div class="ttdef"><b>Definition:</b> <a href="_atomic_boolean_8hpp_source.html#l00011">AtomicBoolean.hpp:11</a></div></div>
+<div class="ttc" id="anamespace_o_s_d_l_html"><div class="ttname"><a href="namespace_o_s_d_l.html">OSDL</a></div><div class="ttdoc">TODO those headers includes other headers which is not consistent with this whole project.</div><div class="ttdef"><b>Definition:</b> <a href="_atomic_boolean_8hpp_source.html#l00011">AtomicBoolean.hpp:11</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

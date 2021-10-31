@@ -76,8 +76,8 @@ $(function() {
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *      Author: Kierann</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef SRC_OSDL_EVENT_EVENTDATA_MOUSEKEYDATA_KEYBOARDKEYDATA_HPP_</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define SRC_OSDL_EVENT_EVENTDATA_MOUSEKEYDATA_KEYBOARDKEYDATA_HPP_</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef OSDL_KEYBOARDKEYDATA</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define OSDL_KEYBOARDKEYDATA</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;../EventData.hpp&quot;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
@@ -86,22 +86,21 @@ $(function() {
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_o_s_d_l.html">OSDL</a> {</div>
 <div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_o_s_d_l_1_1_keyboard_key_data.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_o_s_d_l_1_1_keyboard_key_data.html">KeyboardKeyData</a> : <span class="keyword">public</span> <a class="code" href="class_o_s_d_l_1_1_event_data.html">OSDL::EventData</a> {</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_o_s_d_l_1_1_keyboard_key_data.html#af16c73acfc2f48727c50eedbf60f0b9d">   18</a></span>&#160;    <a class="code" href="namespace_o_s_d_l.html#a400d6c299c331724b51729e23fb57186">OSDL::KeyboardKey</a> <a class="code" href="class_o_s_d_l_1_1_keyboard_key_data.html#af16c73acfc2f48727c50eedbf60f0b9d">key</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="namespace_o_s_d_l.html#a400d6c299c331724b51729e23fb57186">OSDL::KeyboardKey</a> key;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="class_o_s_d_l_1_1_keyboard_key_data.html#ac9ba3e9bb2f8e38c8aff98d6bd15c45f">KeyboardKeyData</a>(<a class="code" href="namespace_o_s_d_l.html#a400d6c299c331724b51729e23fb57186">OSDL::KeyboardKey</a> <a class="code" href="class_o_s_d_l_1_1_keyboard_key_data.html#af16c73acfc2f48727c50eedbf60f0b9d">key</a>);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="class_o_s_d_l_1_1_keyboard_key_data.html#ac9ba3e9bb2f8e38c8aff98d6bd15c45f">KeyboardKeyData</a>(<a class="code" href="namespace_o_s_d_l.html#a400d6c299c331724b51729e23fb57186">OSDL::KeyboardKey</a> key);</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="namespace_o_s_d_l.html#a400d6c299c331724b51729e23fb57186">OSDL::KeyboardKey</a> <a class="code" href="class_o_s_d_l_1_1_keyboard_key_data.html#a29fd4c153077f459b97928f0705fbb4d">getKey</a>();</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;};</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* SRC_OSDL_EVENT_EVENTDATA_MOUSEKEYDATA_KEYBOARDKEYDATA_HPP_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* OSDL_KEYBOARDKEYDATA */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclass_o_s_d_l_1_1_keyboard_key_data_html_ac9ba3e9bb2f8e38c8aff98d6bd15c45f"><div class="ttname"><a href="class_o_s_d_l_1_1_keyboard_key_data.html#ac9ba3e9bb2f8e38c8aff98d6bd15c45f">OSDL::KeyboardKeyData::KeyboardKeyData</a></div><div class="ttdeci">KeyboardKeyData(OSDL::KeyboardKey key)</div></div>
-<div class="ttc" id="anamespace_o_s_d_l_html_a400d6c299c331724b51729e23fb57186"><div class="ttname"><a href="namespace_o_s_d_l.html#a400d6c299c331724b51729e23fb57186">OSDL::KeyboardKey</a></div><div class="ttdeci">KeyboardKey</div><div class="ttdef"><b>Definition:</b> <a href="_event_types_8hpp_source.html#l00030">EventTypes.hpp:30</a></div></div>
-<div class="ttc" id="aclass_o_s_d_l_1_1_keyboard_key_data_html_af16c73acfc2f48727c50eedbf60f0b9d"><div class="ttname"><a href="class_o_s_d_l_1_1_keyboard_key_data.html#af16c73acfc2f48727c50eedbf60f0b9d">OSDL::KeyboardKeyData::key</a></div><div class="ttdeci">OSDL::KeyboardKey key</div><div class="ttdef"><b>Definition:</b> <a href="_keyboard_key_data_8hpp_source.html#l00018">KeyboardKeyData.hpp:18</a></div></div>
+<div class="ttc" id="anamespace_o_s_d_l_html_a400d6c299c331724b51729e23fb57186"><div class="ttname"><a href="namespace_o_s_d_l.html#a400d6c299c331724b51729e23fb57186">OSDL::KeyboardKey</a></div><div class="ttdeci">KeyboardKey</div><div class="ttdef"><b>Definition:</b> <a href="_event_types_8hpp_source.html#l00031">EventTypes.hpp:31</a></div></div>
 <div class="ttc" id="aclass_o_s_d_l_1_1_event_data_html"><div class="ttname"><a href="class_o_s_d_l_1_1_event_data.html">OSDL::EventData</a></div><div class="ttdef"><b>Definition:</b> <a href="_event_data_8hpp_source.html#l00018">EventData.hpp:18</a></div></div>
 <div class="ttc" id="aclass_o_s_d_l_1_1_keyboard_key_data_html"><div class="ttname"><a href="class_o_s_d_l_1_1_keyboard_key_data.html">OSDL::KeyboardKeyData</a></div><div class="ttdef"><b>Definition:</b> <a href="_keyboard_key_data_8hpp_source.html#l00016">KeyboardKeyData.hpp:16</a></div></div>
-<div class="ttc" id="anamespace_o_s_d_l_html"><div class="ttname"><a href="namespace_o_s_d_l.html">OSDL</a></div><div class="ttdef"><b>Definition:</b> <a href="_atomic_boolean_8hpp_source.html#l00011">AtomicBoolean.hpp:11</a></div></div>
+<div class="ttc" id="anamespace_o_s_d_l_html"><div class="ttname"><a href="namespace_o_s_d_l.html">OSDL</a></div><div class="ttdoc">TODO those headers includes other headers which is not consistent with this whole project.</div><div class="ttdef"><b>Definition:</b> <a href="_atomic_boolean_8hpp_source.html#l00011">AtomicBoolean.hpp:11</a></div></div>
 <div class="ttc" id="aclass_o_s_d_l_1_1_keyboard_key_data_html_a29fd4c153077f459b97928f0705fbb4d"><div class="ttname"><a href="class_o_s_d_l_1_1_keyboard_key_data.html#a29fd4c153077f459b97928f0705fbb4d">OSDL::KeyboardKeyData::getKey</a></div><div class="ttdeci">OSDL::KeyboardKey getKey()</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

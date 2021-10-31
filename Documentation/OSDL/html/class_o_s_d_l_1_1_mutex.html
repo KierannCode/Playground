@@ -67,7 +67,6 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_o_s_d_l_1_1_mutex-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">OSDL::Mutex Class Reference</div>  </div>
@@ -82,7 +81,7 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af8f70cd8394d5a675ae2a8fc89581210"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_d_l_1_1_mutex.html#af8f70cd8394d5a675ae2a8fc89581210">Mutex</a> ()</td></tr>
-<tr class="memdesc:af8f70cd8394d5a675ae2a8fc89581210"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new mutex, unlocked by default.  <a href="class_o_s_d_l_1_1_mutex.html#af8f70cd8394d5a675ae2a8fc89581210">More...</a><br /></td></tr>
+<tr class="memdesc:af8f70cd8394d5a675ae2a8fc89581210"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="class_o_s_d_l_1_1_mutex.html#af8f70cd8394d5a675ae2a8fc89581210">More...</a><br /></td></tr>
 <tr class="separator:af8f70cd8394d5a675ae2a8fc89581210"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2dc233109d5ae8ba27f764baa7571ac4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_d_l_1_1_mutex.html#a2dc233109d5ae8ba27f764baa7571ac4">lock</a> ()</td></tr>
 <tr class="memdesc:a2dc233109d5ae8ba27f764baa7571ac4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Locks the mutex.  <a href="class_o_s_d_l_1_1_mutex.html#a2dc233109d5ae8ba27f764baa7571ac4">More...</a><br /></td></tr>
@@ -91,17 +90,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a38322fd6ca42efb755dca567d2e1ae72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unlocks the mutex.  <a href="class_o_s_d_l_1_1_mutex.html#a38322fd6ca42efb755dca567d2e1ae72">More...</a><br /></td></tr>
 <tr class="separator:a38322fd6ca42efb755dca567d2e1ae72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54bd659cfdbc3329ca05c3f95d777da5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_d_l_1_1_mutex.html#a54bd659cfdbc3329ca05c3f95d777da5">~Mutex</a> ()</td></tr>
-<tr class="memdesc:a54bd659cfdbc3329ca05c3f95d777da5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys the mutex.  <a href="class_o_s_d_l_1_1_mutex.html#a54bd659cfdbc3329ca05c3f95d777da5">More...</a><br /></td></tr>
+<tr class="memdesc:a54bd659cfdbc3329ca05c3f95d777da5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="class_o_s_d_l_1_1_mutex.html#a54bd659cfdbc3329ca05c3f95d777da5">More...</a><br /></td></tr>
 <tr class="separator:a54bd659cfdbc3329ca05c3f95d777da5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:aa7bc083102289515817881575a5b192c"><td class="memItemLeft" align="right" valign="top">SDL_mutex *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_d_l_1_1_mutex.html#aa7bc083102289515817881575a5b192c">mutex</a></td></tr>
-<tr class="separator:aa7bc083102289515817881575a5b192c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implementation of a mutex using SDL primitives. </p>
-<p>This implementation is the Object Oriented version of SDL_mutex.<br  />
+<p>This implementation is the Object Oriented version of SDL_mutex structure.<br  />
 A mutex shall be used to prevent concurrent access to shared ressources between threads.<br  />
 A mutex must be locked right before using the ressources, and unlocked right after.<br  />
 This implementation supports recursive locking. </p>
@@ -123,7 +117,8 @@ This implementation supports recursive locking. </p>
       </table>
 </div><div class="memdoc">
 
-<p>Creates a new mutex, unlocked by default. </p>
+<p>Default constructor. </p>
+<p>Initilializes the mutex, unlocked by default.</p>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname"><a class="el" href="class_o_s_d_l_1_1_s_d_l_exception.html">OSDL::SDLException</a></td><td>if the mutex could not be created by SDL </td></tr>
@@ -148,7 +143,7 @@ This implementation supports recursive locking. </p>
       </table>
 </div><div class="memdoc">
 
-<p>Destroys the mutex. </p>
+<p>Destructor. </p>
 <p>A mutex must always be destroyed in its unlocked state.<br  />
 Destroying a locked mutex results in undefined behavior. </p>
 
@@ -209,31 +204,6 @@ Calling this method when the mutex is not locked results in undefined behavior.<
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="aa7bc083102289515817881575a5b192c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa7bc083102289515817881575a5b192c">&#9670;&nbsp;</a></span>mutex</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">SDL_mutex* OSDL::Mutex::mutex</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_mutex_8hpp_source.html#l00069">69</a> of file <a class="el" href="_mutex_8hpp_source.html">Mutex.hpp</a>.</p>
 
 </div>
 </div>

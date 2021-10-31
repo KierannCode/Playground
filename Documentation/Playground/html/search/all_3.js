@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['geteventqueue_12',['getEventQueue',['../class_event_manager.html#aa44bc7b5dd6ed1d2966c0df3f14aabc6',1,'EventManager']]],
-  ['getexitvalue_13',['getExitValue',['../class_software.html#a2543b696ef7ce27b17554aa807d872f9',1,'Software']]],
-  ['getsoftwarerenderer_14',['getSoftwareRenderer',['../class_menu.html#a582295f5190f78389be6caedbe1d0b49',1,'Menu::getSoftwareRenderer()'],['../class_software.html#a2370b0e12131986db844bca702f37759',1,'Software::getSoftwareRenderer()']]]
+  ['importwindowsize_8',['importWindowSize',['../class_software.html#af1d651a4bde5db2f47e451b16ebc62dc',1,'Software']]],
+  ['isover_9',['isOver',['../class_software.html#a68cadbc175cdd80a1aa326ed302f5849',1,'Software']]],
+  ['isready_10',['isReady',['../class_rendering_thread.html#ac65330ca632b128c172cfbd3959a7f3f',1,'RenderingThread']]]
 ];

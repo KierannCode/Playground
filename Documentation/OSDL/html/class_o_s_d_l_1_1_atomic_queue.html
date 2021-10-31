@@ -67,44 +67,44 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_o_s_d_l_1_1_atomic_queue-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">OSDL::AtomicQueue Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
+<p>Thread-safe polymorph queue.  
+ <a href="class_o_s_d_l_1_1_atomic_queue.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_atomic_queue_8hpp_source.html">AtomicQueue.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af4aa4a814a095aa020011f67d83adf98"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_d_l_1_1_atomic_queue.html#af4aa4a814a095aa020011f67d83adf98">AtomicQueue</a> ()</td></tr>
+<tr class="memdesc:af4aa4a814a095aa020011f67d83adf98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="class_o_s_d_l_1_1_atomic_queue.html#af4aa4a814a095aa020011f67d83adf98">More...</a><br /></td></tr>
 <tr class="separator:af4aa4a814a095aa020011f67d83adf98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96c4969b68a1359be65a12f193022118"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_d_l_1_1_atomic_queue.html#a96c4969b68a1359be65a12f193022118">push</a> (const <a class="el" href="class_o_s_d_l_1_1_data.html">OSDL::Data</a> &amp;data)</td></tr>
+<tr class="memdesc:a96c4969b68a1359be65a12f193022118"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pushes data at the end of the queue.  <a href="class_o_s_d_l_1_1_atomic_queue.html#a96c4969b68a1359be65a12f193022118">More...</a><br /></td></tr>
 <tr class="separator:a96c4969b68a1359be65a12f193022118"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a071241c408138f889af5ad2f1e1832b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_s_d_l_1_1_data.html">OSDL::Data</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_d_l_1_1_atomic_queue.html#a071241c408138f889af5ad2f1e1832b9">pop</a> ()</td></tr>
+<tr class="memdesc:a071241c408138f889af5ad2f1e1832b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pops data at the beginning of the queue.  <a href="class_o_s_d_l_1_1_atomic_queue.html#a071241c408138f889af5ad2f1e1832b9">More...</a><br /></td></tr>
 <tr class="separator:a071241c408138f889af5ad2f1e1832b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00a5097fe57abfbb29ff21330fc002e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_d_l_1_1_atomic_queue.html#a00a5097fe57abfbb29ff21330fc002e9">unPop</a> ()</td></tr>
+<tr class="memdesc:a00a5097fe57abfbb29ff21330fc002e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restores the last popped element.  <a href="class_o_s_d_l_1_1_atomic_queue.html#a00a5097fe57abfbb29ff21330fc002e9">More...</a><br /></td></tr>
 <tr class="separator:a00a5097fe57abfbb29ff21330fc002e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac092c072ad06adc5ac64b2722dcac998"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_d_l_1_1_atomic_queue.html#ac092c072ad06adc5ac64b2722dcac998">~AtomicQueue</a> ()</td></tr>
+<tr class="memdesc:ac092c072ad06adc5ac64b2722dcac998"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="class_o_s_d_l_1_1_atomic_queue.html#ac092c072ad06adc5ac64b2722dcac998">More...</a><br /></td></tr>
 <tr class="separator:ac092c072ad06adc5ac64b2722dcac998"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:abfec966ddfdb67c19ec3456823946fb7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_s_d_l_1_1_singly_linked_element.html">SinglyLinkedElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_d_l_1_1_atomic_queue.html#abfec966ddfdb67c19ec3456823946fb7">firstElement</a></td></tr>
-<tr class="separator:abfec966ddfdb67c19ec3456823946fb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4fd6efc288c4f9b16be6df21a69f12e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_s_d_l_1_1_singly_linked_element.html">SinglyLinkedElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_d_l_1_1_atomic_queue.html#ae4fd6efc288c4f9b16be6df21a69f12e">lastElement</a></td></tr>
-<tr class="separator:ae4fd6efc288c4f9b16be6df21a69f12e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5180a5969f4ddcb152217def6ebbf46"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_s_d_l_1_1_singly_linked_element.html">SinglyLinkedElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_d_l_1_1_atomic_queue.html#ad5180a5969f4ddcb152217def6ebbf46">poppedElement</a></td></tr>
-<tr class="separator:ad5180a5969f4ddcb152217def6ebbf46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a6faf3d84ca1bb5ebc041502f8806bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_o_s_d_l.html#a037f2cacb60547fa20a84ec0a5103eef">OSDL::ThreadID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_d_l_1_1_atomic_queue.html#a5a6faf3d84ca1bb5ebc041502f8806bf">poppedElementThread</a></td></tr>
-<tr class="separator:a5a6faf3d84ca1bb5ebc041502f8806bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afca4961640950bd889b828a17f510834"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_s_d_l_1_1_mutex.html">OSDL::Mutex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_d_l_1_1_atomic_queue.html#afca4961640950bd889b828a17f510834">mutex</a></td></tr>
-<tr class="separator:afca4961640950bd889b828a17f510834"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_atomic_queue_8hpp_source.html#l00018">18</a> of file <a class="el" href="_atomic_queue_8hpp_source.html">AtomicQueue.hpp</a>.</p>
+<div class="textblock"><p>Thread-safe polymorph queue. </p>
+<p>A thread-safe implementation of a polymorph queue with staged popping : <br  />
+This is a FIFO structure you can push elements into and pop elements off.<br  />
+Consecutive pops empty the queue, starting with the first pushed elements.<br  />
+The last element popped can be restored at the beginning of the queue.<br  />
+This strucutre is thread-safe, meaning that most of its methods can be called simultaneously in any thread. </p>
+
+<p class="definition">Definition at line <a class="el" href="_atomic_queue_8hpp_source.html#l00028">28</a> of file <a class="el" href="_atomic_queue_8hpp_source.html">AtomicQueue.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af4aa4a814a095aa020011f67d83adf98"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af4aa4a814a095aa020011f67d83adf98">&#9670;&nbsp;</a></span>AtomicQueue()</h2>
@@ -120,6 +120,9 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Default constructor. </p>
+<p>Initializes the queue, empty by default. </p>
 
 </div>
 </div>
@@ -137,6 +140,10 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Destructor. </p>
+<p>Empties and destroys the queue.<br  />
+This method is not thread safe : destroying the object while using it in another thread will result in undefined behavior. </p>
 
 </div>
 </div>
@@ -156,6 +163,13 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Pops data at the beginning of the queue. </p>
+<p>Removes and returns the data at the beginning of the queue.<br  />
+The last popped element is temporarily saved and can be pushed back at the beginning of the queue using 'unPop'.<br  />
+Only the last popped element is saved, calling this method multiple times effectively empties the queue. This method is thread-safe and can be called safely in any thread.</p>
+<dl class="section return"><dt>Returns</dt><dd>The data at the beginning of the queue</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_o_s_d_l_1_1_atomic_queue.html#a00a5097fe57abfbb29ff21330fc002e9" title="Restores the last popped element.">OSDL::AtomicQueue::unPop</a> </dd></dl>
+
 </div>
 </div>
 <a id="a96c4969b68a1359be65a12f193022118"></a>
@@ -174,6 +188,16 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Pushes data at the end of the queue. </p>
+<p>Creates a copy of the pushed data and puts it at the end of the queue.<br  />
+This method is thread-safe and can be called safely in any thread.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>The data pushed into the queue </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a00a5097fe57abfbb29ff21330fc002e9"></a>
@@ -191,126 +215,17 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="abfec966ddfdb67c19ec3456823946fb7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abfec966ddfdb67c19ec3456823946fb7">&#9670;&nbsp;</a></span>firstElement</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_o_s_d_l_1_1_singly_linked_element.html">SinglyLinkedElement</a>* OSDL::AtomicQueue::firstElement</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_atomic_queue_8hpp_source.html#l00028">28</a> of file <a class="el" href="_atomic_queue_8hpp_source.html">AtomicQueue.hpp</a>.</p>
-
-</div>
-</div>
-<a id="ae4fd6efc288c4f9b16be6df21a69f12e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae4fd6efc288c4f9b16be6df21a69f12e">&#9670;&nbsp;</a></span>lastElement</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_o_s_d_l_1_1_singly_linked_element.html">SinglyLinkedElement</a>* OSDL::AtomicQueue::lastElement</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_atomic_queue_8hpp_source.html#l00029">29</a> of file <a class="el" href="_atomic_queue_8hpp_source.html">AtomicQueue.hpp</a>.</p>
-
-</div>
-</div>
-<a id="afca4961640950bd889b828a17f510834"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afca4961640950bd889b828a17f510834">&#9670;&nbsp;</a></span>mutex</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_o_s_d_l_1_1_mutex.html">OSDL::Mutex</a>* OSDL::AtomicQueue::mutex</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_atomic_queue_8hpp_source.html#l00034">34</a> of file <a class="el" href="_atomic_queue_8hpp_source.html">AtomicQueue.hpp</a>.</p>
-
-</div>
-</div>
-<a id="ad5180a5969f4ddcb152217def6ebbf46"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad5180a5969f4ddcb152217def6ebbf46">&#9670;&nbsp;</a></span>poppedElement</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_o_s_d_l_1_1_singly_linked_element.html">SinglyLinkedElement</a>* OSDL::AtomicQueue::poppedElement</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_atomic_queue_8hpp_source.html#l00031">31</a> of file <a class="el" href="_atomic_queue_8hpp_source.html">AtomicQueue.hpp</a>.</p>
-
-</div>
-</div>
-<a id="a5a6faf3d84ca1bb5ebc041502f8806bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a6faf3d84ca1bb5ebc041502f8806bf">&#9670;&nbsp;</a></span>poppedElementThread</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespace_o_s_d_l.html#a037f2cacb60547fa20a84ec0a5103eef">OSDL::ThreadID</a> OSDL::AtomicQueue::poppedElementThread</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_atomic_queue_8hpp_source.html#l00032">32</a> of file <a class="el" href="_atomic_queue_8hpp_source.html">AtomicQueue.hpp</a>.</p>
+<p>Restores the last popped element. </p>
+<p>Restores the last popped element at the beginning of the queue.<br  />
+This method is not thread-safe and must be called in the same thread that called 'pop' for the last time. Calling this method when no element was popped will throw an exception.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_o_s_d_l_1_1_atomic_queue.html#a071241c408138f889af5ad2f1e1832b9" title="Pops data at the beginning of the queue.">OSDL::AtomicQueue::pop</a></dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="class_o_s_d_l_1_1_illegal_call_exception.html">OSDL::IllegalCallException</a></td><td>if there was no popped element saved.</td></tr>
+    <tr><td class="paramname"><a class="el" href="class_o_s_d_l_1_1_illegal_call_exception.html">OSDL::IllegalCallException</a></td><td>if it is not called in the same thread which called 'pop' last. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

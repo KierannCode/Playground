@@ -76,8 +76,8 @@ $(function() {
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *      Author: Kierann</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef SRC_OSDL_EVENT_EVENT_HPP_</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define SRC_OSDL_EVENT_EVENT_HPP_</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef OSDL_EVENT</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define OSDL_EVENT</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_event_types_8hpp.html">EventTypes.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
@@ -97,26 +97,23 @@ $(function() {
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="class_o_s_d_l_1_1_event.html#a898f5259624aa4395ed46546386fb83c">~Event</a>();</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_o_s_d_l_1_1_event.html#a2f0295ec23b63a9813417e7404cb877b">   29</a></span>&#160;    SDL_Event *<a class="code" href="class_o_s_d_l_1_1_event.html#a2f0295ec23b63a9813417e7404cb877b">event</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    SDL_Event *event;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_o_s_d_l_1_1_event.html#a7479c6f128ee7fe00c4ec99cae98c4fb">   31</a></span>&#160;    <a class="code" href="class_o_s_d_l_1_1_event_data.html">OSDL::EventData</a> *<a class="code" href="class_o_s_d_l_1_1_event.html#a7479c6f128ee7fe00c4ec99cae98c4fb">eventData</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="class_o_s_d_l_1_1_event_data.html">OSDL::EventData</a> *eventData;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_o_s_d_l_1_1_event.html#a8016b7c42729eb091036d106f07c4729">updateEventData</a>();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> updateEventData();</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;};</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* SRC_OSDL_EVENT_EVENT_HPP_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* OSDL_EVENT */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclass_o_s_d_l_1_1_event_html_a7479c6f128ee7fe00c4ec99cae98c4fb"><div class="ttname"><a href="class_o_s_d_l_1_1_event.html#a7479c6f128ee7fe00c4ec99cae98c4fb">OSDL::Event::eventData</a></div><div class="ttdeci">OSDL::EventData * eventData</div><div class="ttdef"><b>Definition:</b> <a href="_event_8hpp_source.html#l00031">Event.hpp:31</a></div></div>
-<div class="ttc" id="aclass_o_s_d_l_1_1_event_html_a8016b7c42729eb091036d106f07c4729"><div class="ttname"><a href="class_o_s_d_l_1_1_event.html#a8016b7c42729eb091036d106f07c4729">OSDL::Event::updateEventData</a></div><div class="ttdeci">void updateEventData()</div></div>
 <div class="ttc" id="aclass_o_s_d_l_1_1_event_html_a73fcd6754777eec36b8aa5072ff0c4bb"><div class="ttname"><a href="class_o_s_d_l_1_1_event.html#a73fcd6754777eec36b8aa5072ff0c4bb">OSDL::Event::wait</a></div><div class="ttdeci">void wait()</div></div>
-<div class="ttc" id="aclass_o_s_d_l_1_1_event_html_a2f0295ec23b63a9813417e7404cb877b"><div class="ttname"><a href="class_o_s_d_l_1_1_event.html#a2f0295ec23b63a9813417e7404cb877b">OSDL::Event::event</a></div><div class="ttdeci">SDL_Event * event</div><div class="ttdef"><b>Definition:</b> <a href="_event_8hpp_source.html#l00029">Event.hpp:29</a></div></div>
 <div class="ttc" id="aclass_o_s_d_l_1_1_event_html"><div class="ttname"><a href="class_o_s_d_l_1_1_event.html">OSDL::Event</a></div><div class="ttdef"><b>Definition:</b> <a href="_event_8hpp_source.html#l00018">Event.hpp:18</a></div></div>
 <div class="ttc" id="aclass_o_s_d_l_1_1_event_html_a898f5259624aa4395ed46546386fb83c"><div class="ttname"><a href="class_o_s_d_l_1_1_event.html#a898f5259624aa4395ed46546386fb83c">OSDL::Event::~Event</a></div><div class="ttdeci">~Event()</div></div>
 <div class="ttc" id="aclass_o_s_d_l_1_1_event_data_html"><div class="ttname"><a href="class_o_s_d_l_1_1_event_data.html">OSDL::EventData</a></div><div class="ttdef"><b>Definition:</b> <a href="_event_data_8hpp_source.html#l00018">EventData.hpp:18</a></div></div>
 <div class="ttc" id="aclass_o_s_d_l_1_1_event_html_ab4b8c47f8752e2693d988af583154779"><div class="ttname"><a href="class_o_s_d_l_1_1_event.html#ab4b8c47f8752e2693d988af583154779">OSDL::Event::Event</a></div><div class="ttdeci">Event()</div></div>
 <div class="ttc" id="aclass_o_s_d_l_1_1_event_html_a6945412906a7d7c9dfd3af1a018b6bd6"><div class="ttname"><a href="class_o_s_d_l_1_1_event.html#a6945412906a7d7c9dfd3af1a018b6bd6">OSDL::Event::poll</a></div><div class="ttdeci">bool poll()</div></div>
-<div class="ttc" id="anamespace_o_s_d_l_html"><div class="ttname"><a href="namespace_o_s_d_l.html">OSDL</a></div><div class="ttdef"><b>Definition:</b> <a href="_atomic_boolean_8hpp_source.html#l00011">AtomicBoolean.hpp:11</a></div></div>
+<div class="ttc" id="anamespace_o_s_d_l_html"><div class="ttname"><a href="namespace_o_s_d_l.html">OSDL</a></div><div class="ttdoc">TODO those headers includes other headers which is not consistent with this whole project.</div><div class="ttdef"><b>Definition:</b> <a href="_atomic_boolean_8hpp_source.html#l00011">AtomicBoolean.hpp:11</a></div></div>
 <div class="ttc" id="aclass_o_s_d_l_1_1_event_html_a7aed60d37f3b77fa480b71edeba4da4f"><div class="ttname"><a href="class_o_s_d_l_1_1_event.html#a7aed60d37f3b77fa480b71edeba4da4f">OSDL::Event::getEventData</a></div><div class="ttdeci">OSDL::EventData * getEventData() const</div></div>
 <div class="ttc" id="a_event_types_8hpp_html"><div class="ttname"><a href="_event_types_8hpp.html">EventTypes.hpp</a></div></div>
 <!-- start footer part -->

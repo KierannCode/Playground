@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['firsttick_8',['firstTick',['../class_core_thread.html#a6948d6fc546561f1bfc00cdda393e5cd',1,'CoreThread']]],
-  ['frame_9',['frame',['../class_core_thread.html#a2c1fe853e9e568ae218327dc6e566a88',1,'CoreThread']]],
-  ['framerate_10',['framerate',['../class_core_thread.html#a45f8678ce76a0370fcd68ff43c7461ab',1,'CoreThread']]],
-  ['frameskips_11',['frameSkips',['../class_core_thread.html#ae497b1b804edb3a34769fbcdf7f9a27f',1,'CoreThread']]]
+  ['geteventqueue_5',['getEventQueue',['../class_event_manager.html#aa44bc7b5dd6ed1d2966c0df3f14aabc6',1,'EventManager']]],
+  ['getexitvalue_6',['getExitValue',['../class_software.html#a2543b696ef7ce27b17554aa807d872f9',1,'Software']]],
+  ['getsoftwarerenderer_7',['getSoftwareRenderer',['../class_menu.html#a582295f5190f78389be6caedbe1d0b49',1,'Menu::getSoftwareRenderer()'],['../class_software.html#a2370b0e12131986db844bca702f37759',1,'Software::getSoftwareRenderer()']]]
 ];

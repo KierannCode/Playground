@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['quit_105',['quit',['../class_core_thread.html#adfbd9f05ad6dac1d18e7603cc8bee537',1,'CoreThread']]]
+  ['updateframe_77',['updateFrame',['../class_software.html#a3b17e5ddb07d7a3577e4ee1110e8f268',1,'Software']]],
+  ['updaterenderingdata_78',['updateRenderingData',['../class_menu.html#a909da5d0680745479271c5fc2c5991fe',1,'Menu::updateRenderingData()'],['../class_software.html#a7a2e198ca74d3af769163e23a269863b',1,'Software::updateRenderingData()']]]
 ];

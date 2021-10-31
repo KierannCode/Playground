@@ -76,24 +76,26 @@ $(function() {
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *      Author: Kierann</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef SRC_OSDL_RESILIENCE_EXCEPTION_SDLEXCEPTION_HPP_</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define SRC_OSDL_RESILIENCE_EXCEPTION_SDLEXCEPTION_HPP_</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef OSDL_SDLEXCEPTION</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define OSDL_SDLEXCEPTION</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;../Exception.hpp&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_exception_8hpp.html">Exception.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_o_s_d_l.html">OSDL</a> {</div>
 <div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_o_s_d_l_1_1_s_d_l_exception.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_o_s_d_l_1_1_s_d_l_exception.html">SDLException</a>: <span class="keyword">public</span> <a class="code" href="class_o_s_d_l_1_1_exception.html">OSDL::Exception</a> {</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="class_o_s_d_l_1_1_s_d_l_exception.html#a1f16ee491372edbc171d10abf4e7b47b">SDLException</a>();</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;};</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* SRC_OSDL_RESILIENCE_EXCEPTION_SDLEXCEPTION_HPP_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_o_s_d_l_1_1_s_d_l_exception.html#a1f16ee491372edbc171d10abf4e7b47b">SDLException</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *adviceMessage);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;};</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* OSDL_SDLEXCEPTION */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclass_o_s_d_l_1_1_s_d_l_exception_html"><div class="ttname"><a href="class_o_s_d_l_1_1_s_d_l_exception.html">OSDL::SDLException</a></div><div class="ttdef"><b>Definition:</b> <a href="_s_d_l_exception_8hpp_source.html#l00014">SDLException.hpp:14</a></div></div>
+<div class="ttc" id="a_exception_8hpp_html"><div class="ttname"><a href="_exception_8hpp.html">Exception.hpp</a></div></div>
 <div class="ttc" id="aclass_o_s_d_l_1_1_exception_html"><div class="ttname"><a href="class_o_s_d_l_1_1_exception.html">OSDL::Exception</a></div><div class="ttdef"><b>Definition:</b> <a href="_exception_8hpp_source.html#l00016">Exception.hpp:16</a></div></div>
 <div class="ttc" id="aclass_o_s_d_l_1_1_s_d_l_exception_html_a1f16ee491372edbc171d10abf4e7b47b"><div class="ttname"><a href="class_o_s_d_l_1_1_s_d_l_exception.html#a1f16ee491372edbc171d10abf4e7b47b">OSDL::SDLException::SDLException</a></div><div class="ttdeci">SDLException()</div></div>
-<div class="ttc" id="anamespace_o_s_d_l_html"><div class="ttname"><a href="namespace_o_s_d_l.html">OSDL</a></div><div class="ttdef"><b>Definition:</b> <a href="_atomic_boolean_8hpp_source.html#l00011">AtomicBoolean.hpp:11</a></div></div>
+<div class="ttc" id="anamespace_o_s_d_l_html"><div class="ttname"><a href="namespace_o_s_d_l.html">OSDL</a></div><div class="ttdoc">TODO those headers includes other headers which is not consistent with this whole project.</div><div class="ttdef"><b>Definition:</b> <a href="_atomic_boolean_8hpp_source.html#l00011">AtomicBoolean.hpp:11</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

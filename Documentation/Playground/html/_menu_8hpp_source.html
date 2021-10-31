@@ -76,8 +76,8 @@ $(function() {
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *      Author: Kierann</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef SRC_SOFTWARE_MENU_MENU_HPP_</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define SRC_SOFTWARE_MENU_MENU_HPP_</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef PLAYGROUND_MENU</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define PLAYGROUND_MENU</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;../Software.hpp&quot;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
@@ -92,15 +92,15 @@ $(function() {
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="class_menu.html#a831387f51358cfb88cd018e1777bc980">~Menu</a>();</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_menu.html#afcb3848474700c1c419893537cd6fa9a">onMouseMotion</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_menu.html#ad62e4916e2e8ef6eccd21321ec236a3d">onMouseKeyReleased</a>(OSDL::MouseKey key, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> onMouseMotion(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> onMouseKeyReleased(OSDL::MouseKey key, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_menu.html#a50b619c1568f0eb9fc22b1d7537b1f57">   27</a></span>&#160;    <a class="code" href="class_menu_renderer.html">MenuRenderer</a> *<a class="code" href="class_menu.html#a50b619c1568f0eb9fc22b1d7537b1f57">renderer</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="class_menu_renderer.html">MenuRenderer</a> *renderer;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_menu.html#ac0ed9bede1a6c5db02d9d0981ec25538">   29</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_menu.html#ac0ed9bede1a6c5db02d9d0981ec25538">selectedSoftware</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">int</span> selectedSoftware;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;};</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* SRC_SOFTWARE_MENU_HPP_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PLAYGROUND_MENU */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclass_menu_html_a909da5d0680745479271c5fc2c5991fe"><div class="ttname"><a href="class_menu.html#a909da5d0680745479271c5fc2c5991fe">Menu::updateRenderingData</a></div><div class="ttdeci">void updateRenderingData()</div></div>
 <div class="ttc" id="aclass_software_renderer_html"><div class="ttname"><a href="class_software_renderer.html">SoftwareRenderer</a></div><div class="ttdef"><b>Definition:</b> <a href="_software_renderer_8hpp_source.html#l00015">SoftwareRenderer.hpp:15</a></div></div>
@@ -108,12 +108,8 @@ $(function() {
 <div class="ttc" id="aclass_menu_html_a831387f51358cfb88cd018e1777bc980"><div class="ttname"><a href="class_menu.html#a831387f51358cfb88cd018e1777bc980">Menu::~Menu</a></div><div class="ttdeci">~Menu()</div></div>
 <div class="ttc" id="aclass_menu_html_a582295f5190f78389be6caedbe1d0b49"><div class="ttname"><a href="class_menu.html#a582295f5190f78389be6caedbe1d0b49">Menu::getSoftwareRenderer</a></div><div class="ttdeci">SoftwareRenderer * getSoftwareRenderer() const</div></div>
 <div class="ttc" id="aclass_menu_renderer_html"><div class="ttname"><a href="class_menu_renderer.html">MenuRenderer</a></div><div class="ttdef"><b>Definition:</b> <a href="_menu_renderer_8hpp_source.html#l00017">MenuRenderer.hpp:17</a></div></div>
-<div class="ttc" id="aclass_menu_html_ac0ed9bede1a6c5db02d9d0981ec25538"><div class="ttname"><a href="class_menu.html#ac0ed9bede1a6c5db02d9d0981ec25538">Menu::selectedSoftware</a></div><div class="ttdeci">int selectedSoftware</div><div class="ttdef"><b>Definition:</b> <a href="_menu_8hpp_source.html#l00029">Menu.hpp:29</a></div></div>
 <div class="ttc" id="aclass_menu_html"><div class="ttname"><a href="class_menu.html">Menu</a></div><div class="ttdef"><b>Definition:</b> <a href="_menu_8hpp_source.html#l00015">Menu.hpp:15</a></div></div>
-<div class="ttc" id="aclass_menu_html_ad62e4916e2e8ef6eccd21321ec236a3d"><div class="ttname"><a href="class_menu.html#ad62e4916e2e8ef6eccd21321ec236a3d">Menu::onMouseKeyReleased</a></div><div class="ttdeci">void onMouseKeyReleased(OSDL::MouseKey key, int x, int y)</div></div>
 <div class="ttc" id="aclass_software_html"><div class="ttname"><a href="class_software.html">Software</a></div><div class="ttdef"><b>Definition:</b> <a href="_software_8hpp_source.html#l00023">Software.hpp:23</a></div></div>
-<div class="ttc" id="aclass_menu_html_afcb3848474700c1c419893537cd6fa9a"><div class="ttname"><a href="class_menu.html#afcb3848474700c1c419893537cd6fa9a">Menu::onMouseMotion</a></div><div class="ttdeci">void onMouseMotion(int x, int y)</div></div>
-<div class="ttc" id="aclass_menu_html_a50b619c1568f0eb9fc22b1d7537b1f57"><div class="ttname"><a href="class_menu.html#a50b619c1568f0eb9fc22b1d7537b1f57">Menu::renderer</a></div><div class="ttdeci">MenuRenderer * renderer</div><div class="ttdef"><b>Definition:</b> <a href="_menu_8hpp_source.html#l00027">Menu.hpp:27</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

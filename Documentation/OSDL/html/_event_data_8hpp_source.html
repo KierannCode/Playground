@@ -76,8 +76,8 @@ $(function() {
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *      Author: Kierann</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef SRC_OSDL_EVENT_EVENTDATA_HPP_</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define SRC_OSDL_EVENT_EVENTDATA_HPP_</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef OSDL_EVENTDATA</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define OSDL_EVENTDATA</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;../Data/Data.hpp&quot;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
@@ -96,22 +96,21 @@ $(function() {
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_o_s_d_l_1_1_event_data.html#aae8ade670ff45c4b60fd68fc0eb2c26b">~EventData</a>();</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_o_s_d_l_1_1_event_data.html#ae1a8054cf624937338e6ec562c16e77c">   28</a></span>&#160;    <a class="code" href="namespace_o_s_d_l.html#a0149dd4a858949663948a50756093ae8">OSDL::Time</a> <a class="code" href="class_o_s_d_l_1_1_event_data.html#ae1a8054cf624937338e6ec562c16e77c">timestamp</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="namespace_o_s_d_l.html#a0149dd4a858949663948a50756093ae8">OSDL::Time</a> timestamp;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;};</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* SRC_OSDL_EVENT_EVENTDATA_HPP_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* OSDL_EVENTDATA */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="anamespace_o_s_d_l_html_a0149dd4a858949663948a50756093ae8"><div class="ttname"><a href="namespace_o_s_d_l.html#a0149dd4a858949663948a50756093ae8">OSDL::Time</a></div><div class="ttdeci">uint32_t Time</div><div class="ttdef"><b>Definition:</b> <a href="_types_8hpp_source.html#l00026">Types.hpp:26</a></div></div>
-<div class="ttc" id="aclass_o_s_d_l_1_1_event_data_html_ae1a8054cf624937338e6ec562c16e77c"><div class="ttname"><a href="class_o_s_d_l_1_1_event_data.html#ae1a8054cf624937338e6ec562c16e77c">OSDL::EventData::timestamp</a></div><div class="ttdeci">OSDL::Time timestamp</div><div class="ttdef"><b>Definition:</b> <a href="_event_data_8hpp_source.html#l00028">EventData.hpp:28</a></div></div>
 <div class="ttc" id="aclass_o_s_d_l_1_1_event_data_html_a2e1b0ab52eabf9b4d50b12931d6c2c9f"><div class="ttname"><a href="class_o_s_d_l_1_1_event_data.html#a2e1b0ab52eabf9b4d50b12931d6c2c9f">OSDL::EventData::getEventType</a></div><div class="ttdeci">virtual OSDL::EventType getEventType() const =0</div></div>
 <div class="ttc" id="aclass_o_s_d_l_1_1_data_html"><div class="ttname"><a href="class_o_s_d_l_1_1_data.html">OSDL::Data</a></div><div class="ttdoc">Basic data interface.</div><div class="ttdef"><b>Definition:</b> <a href="_data_8hpp_source.html#l00018">Data.hpp:18</a></div></div>
-<div class="ttc" id="anamespace_o_s_d_l_html_a6ce4bd55025ffff84968685a13992cff"><div class="ttname"><a href="namespace_o_s_d_l.html#a6ce4bd55025ffff84968685a13992cff">OSDL::EventType</a></div><div class="ttdeci">EventType</div><div class="ttdef"><b>Definition:</b> <a href="_event_types_8hpp_source.html#l00015">EventTypes.hpp:15</a></div></div>
+<div class="ttc" id="anamespace_o_s_d_l_html_a6ce4bd55025ffff84968685a13992cff"><div class="ttname"><a href="namespace_o_s_d_l.html#a6ce4bd55025ffff84968685a13992cff">OSDL::EventType</a></div><div class="ttdeci">EventType</div><div class="ttdef"><b>Definition:</b> <a href="_event_types_8hpp_source.html#l00016">EventTypes.hpp:16</a></div></div>
 <div class="ttc" id="aclass_o_s_d_l_1_1_event_data_html_aae8ade670ff45c4b60fd68fc0eb2c26b"><div class="ttname"><a href="class_o_s_d_l_1_1_event_data.html#aae8ade670ff45c4b60fd68fc0eb2c26b">OSDL::EventData::~EventData</a></div><div class="ttdeci">virtual ~EventData()</div></div>
 <div class="ttc" id="aclass_o_s_d_l_1_1_event_data_html_aaa744af5d376c427189dc1f75ebf772a"><div class="ttname"><a href="class_o_s_d_l_1_1_event_data.html#aaa744af5d376c427189dc1f75ebf772a">OSDL::EventData::EventData</a></div><div class="ttdeci">EventData()</div></div>
 <div class="ttc" id="aclass_o_s_d_l_1_1_event_data_html_aad204e03fb2cb9e5e8d87c66ee11fec9"><div class="ttname"><a href="class_o_s_d_l_1_1_event_data.html#aad204e03fb2cb9e5e8d87c66ee11fec9">OSDL::EventData::getTimestamp</a></div><div class="ttdeci">OSDL::Time getTimestamp() const</div></div>
 <div class="ttc" id="aclass_o_s_d_l_1_1_event_data_html"><div class="ttname"><a href="class_o_s_d_l_1_1_event_data.html">OSDL::EventData</a></div><div class="ttdef"><b>Definition:</b> <a href="_event_data_8hpp_source.html#l00018">EventData.hpp:18</a></div></div>
-<div class="ttc" id="anamespace_o_s_d_l_html"><div class="ttname"><a href="namespace_o_s_d_l.html">OSDL</a></div><div class="ttdef"><b>Definition:</b> <a href="_atomic_boolean_8hpp_source.html#l00011">AtomicBoolean.hpp:11</a></div></div>
+<div class="ttc" id="anamespace_o_s_d_l_html"><div class="ttname"><a href="namespace_o_s_d_l.html">OSDL</a></div><div class="ttdoc">TODO those headers includes other headers which is not consistent with this whole project.</div><div class="ttdef"><b>Definition:</b> <a href="_atomic_boolean_8hpp_source.html#l00011">AtomicBoolean.hpp:11</a></div></div>
 <div class="ttc" id="a_event_types_8hpp_html"><div class="ttname"><a href="_event_types_8hpp.html">EventTypes.hpp</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

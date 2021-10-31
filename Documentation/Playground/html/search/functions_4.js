@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['loopcode_94',['loopCode',['../class_core_thread.html#a54bcf60fa8fa6fa7a7dd29cc5a6d2121',1,'CoreThread::loopCode()'],['../class_rendering_thread.html#a7a05db120f85d57a58349de5f27b96ec',1,'RenderingThread::loopCode()']]]
+  ['manageevents_65',['manageEvents',['../class_software.html#a8fd0f7f94a6eb5ddc156dfc919950535',1,'Software']]],
+  ['menu_66',['Menu',['../class_menu.html#ad466dd83355124a6ed958430450bfe94',1,'Menu']]],
+  ['menurenderer_67',['MenuRenderer',['../class_menu_renderer.html#a28759b378a36cf3eed206ee7e31e1cf0',1,'MenuRenderer']]]
 ];

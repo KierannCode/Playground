@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['importwindowsize_15',['importWindowSize',['../class_software.html#af1d651a4bde5db2f47e451b16ebc62dc',1,'Software']]],
-  ['initialize_16',['initialize',['../class_core_thread.html#a819dcac9297455c31b7cfbee8e758e7e',1,'CoreThread']]],
-  ['isover_17',['isOver',['../class_software.html#a68cadbc175cdd80a1aa326ed302f5849',1,'Software']]],
-  ['isready_18',['isReady',['../class_rendering_thread.html#ac65330ca632b128c172cfbd3959a7f3f',1,'RenderingThread']]]
+  ['manageevents_11',['manageEvents',['../class_software.html#a8fd0f7f94a6eb5ddc156dfc919950535',1,'Software']]],
+  ['menu_12',['Menu',['../class_menu.html',1,'Menu'],['../class_menu_renderer.html#a834cec0fab7efabab3cd53540e4d466d',1,'MenuRenderer::Menu()'],['../class_menu.html#ad466dd83355124a6ed958430450bfe94',1,'Menu::Menu()']]],
+  ['menu_2ehpp_13',['Menu.hpp',['../_menu_8hpp.html',1,'']]],
+  ['menurenderer_14',['MenuRenderer',['../class_menu_renderer.html',1,'MenuRenderer'],['../class_menu_renderer.html#a28759b378a36cf3eed206ee7e31e1cf0',1,'MenuRenderer::MenuRenderer()']]],
+  ['menurenderer_2ehpp_15',['MenuRenderer.hpp',['../_menu_renderer_8hpp.html',1,'']]]
 ];
