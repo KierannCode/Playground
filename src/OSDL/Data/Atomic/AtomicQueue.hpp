@@ -5,13 +5,13 @@
  *      Author: Kierann
  */
 
-#ifndef SRC_OSDL_DATA_ATOMIC_ATOMICQUEUE_HPP_
-#define SRC_OSDL_DATA_ATOMIC_ATOMICQUEUE_HPP_
+#ifndef OSDL_ATOMICQUEUE
+#define OSDL_ATOMICQUEUE
 
 #include "../../Types.hpp"
 
 namespace OSDL {
-class SinglyLinkedElement;
+class SingleLinkElement;
 class Data;
 class Mutex;
 
@@ -25,14 +25,14 @@ public:
 
 	~AtomicQueue();
 private:
-	SinglyLinkedElement *firstElement;
-	SinglyLinkedElement *lastElement;
+	SingleLinkElement *firstElement;
+	SingleLinkElement *lastElement;
 
-	SinglyLinkedElement *poppedElement;
+	SingleLinkElement *poppedElement;
 	OSDL::ThreadID poppedElementThread;
 
 	OSDL::Mutex *mutex;
 };
 }
 
-#endif /* SRC_OSDL_DATA_ATOMIC_ATOMICQUEUE_HPP_ */
+#endif /* OSDL_ATOMICQUEUE */

@@ -5,8 +5,8 @@
  *      Author: Kierann
  */
 
-#ifndef SRC_OSDL_THREAD_THREADLOOP_HPP_
-#define SRC_OSDL_THREAD_THREADLOOP_HPP_
+#ifndef OSDL_THREADLOOP
+#define OSDL_THREADLOOP
 
 #include "../Types.hpp"
 
@@ -37,4 +37,4 @@ private:
 };
 }
 
-#endif /* SRC_OSDL_THREAD_THREADLOOP_HPP_ */
+#endif /* OSDL_THREADLOOP */

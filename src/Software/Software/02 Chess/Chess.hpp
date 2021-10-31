@@ -5,11 +5,11 @@
  *      Author: Kierann
  */
 
-#ifndef SRC_SOFTWARE_02_CHESS_CHESS_HPP_
-#define SRC_SOFTWARE_02_CHESS_CHESS_HPP_
+#ifndef PLAYGROUND_CHESS
+#define PLAYGROUND_CHESS
 
 
 
 
 
-#endif /* SRC_SOFTWARE_02_CHESS_CHESS_HPP_ */
+#endif /* PLAYGROUND_CHESS */

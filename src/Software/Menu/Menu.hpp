@@ -5,8 +5,8 @@
  *      Author: Kierann
  */
 
-#ifndef SRC_SOFTWARE_MENU_MENU_HPP_
-#define SRC_SOFTWARE_MENU_MENU_HPP_
+#ifndef PLAYGROUND_MENU
+#define PLAYGROUND_MENU
 
 #include "../Software.hpp"
 
@@ -29,4 +29,4 @@ private:
 	int selectedSoftware;
 };
 
-#endif /* SRC_SOFTWARE_MENU_HPP_ */
+#endif /* PLAYGROUND_MENU */

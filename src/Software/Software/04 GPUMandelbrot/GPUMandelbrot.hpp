@@ -5,8 +5,8 @@
  *      Author: Kierann
  */
 
-#ifndef SRC_SOFTWARE_04_GPUMANDELBROT_GPUMANDELBROT_HPP_
-#define SRC_SOFTWARE_04_GPUMANDELBROT_GPUMANDELBROT_HPP_
+#ifndef PLAYGROUND_GPUMANDELBROT
+#define PLAYGROUND_GPUMANDELBROT
 
 #include "CUDA/CUDAComplex.cuh"
 #include "../../Software.hpp"
@@ -28,4 +28,4 @@ public:
 	~GPUMandelbrot();
 };
 
-#endif /* SRC_SOFTWARE_04_GPUMANDELBROT_GPUMANDELBROT_HPP_ */
+#endif /* PLAYGROUND_GPUMANDELBROT */

@@ -5,8 +5,8 @@
  *      Author: Kierann
  */
 
-#ifndef SRC_OSDL_OSDL_HPP_
-#define SRC_OSDL_OSDL_HPP_
+#ifndef OSDL
+#define OSDL
 
 /**
  * @brief OSDL namespace.

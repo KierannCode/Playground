@@ -5,8 +5,8 @@
  *      Author: Kierann
  */
 
-#ifndef SRC_OSDL_SYSTEM_HPP_
-#define SRC_OSDL_SYSTEM_HPP_
+#ifndef OSDL_SYSTEM
+#define OSDL_SYSTEM
 
 #include "Types.hpp"
 
@@ -18,4 +18,4 @@ public:
 };
 }
 
-#endif /* SRC_OSDL_SYSTEM_HPP_ */
+#endif /* OSDL_SYSTEM */

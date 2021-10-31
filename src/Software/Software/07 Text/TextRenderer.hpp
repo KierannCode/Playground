@@ -5,8 +5,8 @@
  *      Author: Kierann
  */
 
-#ifndef SRC_SOFTWARE_07_TEXT_TEXTRENDERER_HPP_
-#define SRC_SOFTWARE_07_TEXT_TEXTRENDERER_HPP_
+#ifndef PLAYGROUND_TEXTRENDERER
+#define PLAYGROUND_TEXTRENDERER
 
 #include "../../SoftwareRenderer.hpp"
 
@@ -29,4 +29,4 @@ public:
 	~TextRenderer();
 };
 
-#endif /* SRC_SOFTWARE_07_TEXT_TEXTRENDERER_HPP_ */
+#endif /* PLAYGROUND_TEXTRENDERER */

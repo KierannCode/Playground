@@ -5,8 +5,8 @@
  *      Author: Kierann
  */
 
-#ifndef SRC_OSDL_DATA_DATA_HPP_
-#define SRC_OSDL_DATA_DATA_HPP_
+#ifndef OSDL_DATA
+#define OSDL_DATA
 
 namespace OSDL {
 
@@ -43,4 +43,4 @@ public:
 };
 }
 
-#endif /* SRC_OSDL_DATA_DATA_HPP_ */
+#endif /* OSDL_DATA */

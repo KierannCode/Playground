@@ -5,8 +5,8 @@
  *      Author: Kierann
  */
 
-#ifndef SRC_OSDL_VIDEO_SURFACE_HPP_
-#define SRC_OSDL_VIDEO_SURFACE_HPP_
+#ifndef OSDL_SURFACE
+#define OSDL_SURFACE
 
 #include "../Types.hpp"
 
@@ -44,4 +44,4 @@ private:
 };
 }
 
-#endif /* SRC_OSDL_VIDEO_SURFACE_HPP_ */
+#endif /* OSDL_SURFACE */

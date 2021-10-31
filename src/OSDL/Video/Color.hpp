@@ -5,8 +5,8 @@
  *      Author: Kierann
  */
 
-#ifndef SRC_OSDL_VIDEO_COLOR_HPP_
-#define SRC_OSDL_VIDEO_COLOR_HPP_
+#ifndef OSDL_COLOR
+#define OSDL_COLOR
 
 #include "../Types.hpp"
 
@@ -31,4 +31,4 @@ private:
 };
 }
 
-#endif /* SRC_OSDL_VIDEO_COLOR_HPP_ */
+#endif /* OSDL_COLOR */

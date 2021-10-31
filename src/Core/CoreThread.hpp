@@ -5,8 +5,8 @@
  *      Author: Kierann
  */
 
-#ifndef SRC_CORE_CORETHREAD_HPP_
-#define SRC_CORE_CORETHREAD_HPP_
+#ifndef PLAYGROUND_CORETHREAD
+#define PLAYGROUND_CORETHREAD
 
 #include "../OSDL/Thread/ThreadLoop.hpp"
 
@@ -50,4 +50,4 @@ private:
 	uint32 frameSkips;
 };
 
-#endif /* SRC_CORE_CORETHREAD_HPP_ */
+#endif /* PLAYGROUND_CORETHREAD */

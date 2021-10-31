@@ -5,8 +5,8 @@
  *      Author: Kierann
  */
 
-#ifndef SRC_OSDL_EVENT_EVENTDATA_MOUSEKEYDATA_HPP_
-#define SRC_OSDL_EVENT_EVENTDATA_MOUSEKEYDATA_HPP_
+#ifndef OSDL_MOUSEKEYDATA
+#define OSDL_MOUSEKEYDATA
 
 #include "../EventData.hpp"
 
@@ -27,4 +27,4 @@ private:
 };
 }
 
-#endif /* SRC_OSDL_EVENT_EVENTDATA_MOUSEKEYDATA_HPP_ */
+#endif /* OSDL_MOUSEKEYDATA */

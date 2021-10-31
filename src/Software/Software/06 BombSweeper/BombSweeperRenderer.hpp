@@ -5,8 +5,8 @@
  *      Author: Kierann
  */
 
-#ifndef SRC_SOFTWARE_06_BOMBSWEEPER_BOMBSWEEPERRENDERER_HPP_
-#define SRC_SOFTWARE_06_BOMBSWEEPER_BOMBSWEEPERRENDERER_HPP_
+#ifndef PLAYGROUND_BOMBSWEEPERRENDERER
+#define PLAYGROUND_BOMBSWEEPERRENDERER
 
 #include "../../../OSDL/Types.hpp"
 #include "BombSweeperTypes.hpp"
@@ -48,4 +48,4 @@ private:
 	friend class BombSweeper;
 };
 
-#endif /* SRC_SOFTWARE_06_BOMBSWEEPER_BOMBSWEEPERRENDERER_HPP_ */
+#endif /* PLAYGROUND_BOMBSWEEPERRENDERER */

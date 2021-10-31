@@ -5,8 +5,8 @@
  *      Author: Kierann
  */
 
-#ifndef SRC_OSDL_EVENT_EVENT_HPP_
-#define SRC_OSDL_EVENT_EVENT_HPP_
+#ifndef OSDL_EVENT
+#define OSDL_EVENT
 
 #include "EventTypes.hpp"
 
@@ -34,4 +34,4 @@ private:
 };
 }
 
-#endif /* SRC_OSDL_EVENT_EVENT_HPP_ */
+#endif /* OSDL_EVENT */

@@ -5,8 +5,8 @@
  *      Author: Kierann
  */
 
-#ifndef SRC_OSDL_DATA_ATOMIC_ATOMICBOOLEAN_HPP_
-#define SRC_OSDL_DATA_ATOMIC_ATOMICBOOLEAN_HPP_
+#ifndef OSDL_ATOMICBOOLEAN
+#define OSDL_ATOMICBOOLEAN
 
 namespace OSDL {
 class Mutex;
@@ -62,4 +62,4 @@ private:
 };
 }
 
-#endif /* SRC_OSDL_DATA_ATOMIC_ATOMICBOOLEAN_HPP_ */
+#endif /* OSDL_ATOMICBOOLEAN */

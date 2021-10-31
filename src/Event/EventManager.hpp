@@ -5,8 +5,8 @@
  *      Author: Kierann
  */
 
-#ifndef SRC_EVENT_EVENTMANAGER_HPP_
-#define SRC_EVENT_EVENTMANAGER_HPP_
+#ifndef PLAYGROUND_EVENTMANAGER
+#define PLAYGROUND_EVENTMANAGER
 
 class RenderingThread;
 class CoreThread;
@@ -34,4 +34,4 @@ private:
 	bool running;
 };
 
-#endif /* SRC_EVENT_EVENTMANAGER_HPP_ */
+#endif /* PLAYGROUND_EVENTMANAGER */

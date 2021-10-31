@@ -5,8 +5,8 @@
  *      Author: Kierann
  */
 
-#ifndef SRC_OSDL_EVENT_EVENTDATA_MOUSEMOTIONDATA_HPP_
-#define SRC_OSDL_EVENT_EVENTDATA_MOUSEMOTIONDATA_HPP_
+#ifndef OSDL_MOUSEMOTIONDATA
+#define OSDL_MOUSEMOTIONDATA
 
 #include "../EventData.hpp"
 
@@ -28,4 +28,4 @@ private:
 };
 }
 
-#endif /* SRC_OSDL_EVENT_EVENTDATA_MOUSEMOTIONDATA_HPP_ */
+#endif /* OSDL_MOUSEMOTIONDATA */
