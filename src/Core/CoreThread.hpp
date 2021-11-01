@@ -59,7 +59,8 @@ public:
 	/**
 	 * @brief destructor
 	 *
-	 * @details destroys the core thread
+	 * @details destroys the core thread. The core thread shall not be running when its destructor is called.\n
+	 * @todo Add a warning when the destructor is called while the thread is still running.
 	 */
 	~CoreThread();
 private:
