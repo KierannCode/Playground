@@ -20,12 +20,47 @@ class AtomicQueue;
 class Window;
 }
 
+/**
+ * @brief The core thread
+ *
+ * @details Processes software events and software mechanics, monitors software performances
+ * and controls the rendering thread frequency.\n
+ * With optimal performances, the rendering thread will be synchronized with the core thread.
+ *
+ * @see RenderingThread
+ */
 class CoreThread: public OSDL::ThreadLoop {
 public:
+	/**
+	 * @brief Value constructor
+	 *
+	 * @details Initializes the core thread.
+	 *
+	 * @param renderingThread The initialized rendering thread
+	 *
+	 * @param window The main window in which softwares will be rendered
+	 *
+	 * @param framerate The maximum core loop frequency
+	 */
 	CoreThread(RenderingThread &renderingThread, const OSDL::Window &window, float framerate);
 
+	/**
+	 * @brief EventQueue setter
+	 *
+	 * @details The event queue is created in the event manager, which must be initialized after the
+	 * core thread. Thus the event queue must be manually set afterwards from the event manager.
+	 *
+	 * @param eventQueue A pointer to the event queue from the event manager
+	 *
+	 * @see EventManager
+	 */
 	void setEventQueue(OSDL::AtomicQueue *eventQueue);
 
+	/**
+	 * @brief destructor
+	 *
+	 * @details destroys the core thread
+	 */
 	~CoreThread();
 private:
 	void initialize();
